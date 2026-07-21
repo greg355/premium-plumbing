@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Premium Plumbing &amp; Drain, Inc. — Same-Day Plumbers in Modesto, Turlock &amp; the Central Valley</title>
+<meta name="description" content="Family-owned, 5-star rated plumbers serving Modesto, Turlock, Tracy, Stockton &amp; Merced. Drain cleaning, water heaters, sewer & trenchless, leak detection & more. Same-day service. Licensed, insured & bonded — CSLB #877139. Call (209) 669-2090." />
+<meta name="theme-color" content="#005e9e" />
+
+<!--
+  ===========================================================================
+   PREMIUM PLUMBING & DRAIN, INC. — HOMEPAGE (single self-contained file)
+   Family-owned residential plumber · Central Valley, CA
+   CONFIRMED FACTS (kept accurate):
+     • Phone:      (209) 669-2090
+     • Address:    2475 Acme Ct, Turlock, CA 95380
+     • Hours:      Mon–Sat, 8am–5pm
+     • License:    CSLB #877139 (licensed, insured & bonded)
+     • Areas:      Modesto · Turlock · Tracy · Stockton · Merced
+     • Socials:    IG @premium_plumbing.inc · FB /premiumplumbinganddraininc/
+   IMAGES: swap the placeholders in /img (loremflickr stock) for real photos.
+   Search "[PH]" for every placeholder / invented stat to replace.
+  ===========================================================================
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+<style>
+/* ============================ TOKENS ============================ */
+:root{
+  --blue:#005e9e;--blue-600:#0a5289;--blue-700:#0a4470;--blue-800:#08375c;
+  --blue-050:#eef5fb;--blue-100:#d9e9f5;--blue-200:#bcd8ee;
+  --red:#bc1e41;--red-600:#a5183a;--red-700:#89142f;
+  --ink:#1b2530;--ink-2:#2b3746;--muted:#5c6b7b;--muted-2:#8090a0;
+  --bg:#ffffff;--panel:#f4f8fb;--panel-2:#eaf2f8;--line:#e3eaf1;--line-2:#d1dde9;
+  --star:#f5a623;
+  --shadow-sm:0 8px 22px -12px rgba(14,45,80,.28);
+  --shadow:0 28px 64px -28px rgba(10,45,80,.4);
+  --radius:16px;--pill:100px;
+  --ease:cubic-bezier(.16,1,.3,1);
+  --wrap:1200px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:'Poppins',system-ui,-apple-system,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:0;background:none}
+ul{list-style:none}
+::selection{background:var(--blue);color:#fff}
+h1,h2,h3,h4,.dsp{font-family:'Poppins',sans-serif;line-height:1.08;letter-spacing:-.01em}
+h1,h2{font-weight:800}h3,h4{font-weight:700}
+.wrap{width:min(var(--wrap),92vw);margin-inline:auto}
+section{position:relative}
+
+/* ============================ BUTTONS ============================ */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55em;font-family:'Poppins',sans-serif;
+  font-weight:700;font-size:1rem;padding:.92em 1.5em;border-radius:var(--pill);white-space:nowrap;
+  transition:transform .25s var(--ease),box-shadow .25s var(--ease),background .2s;position:relative}
+.btn svg{width:1.15em;height:1.15em}
+.btn-red{color:#fff;background:var(--red);box-shadow:0 14px 26px -12px rgba(188,30,65,.6)}
+.btn-red:hover{background:var(--red-600);transform:translateY(-2px);box-shadow:0 20px 34px -14px rgba(188,30,65,.65)}
+.btn-blue{color:#fff;background:var(--blue);box-shadow:0 14px 26px -12px rgba(0,94,158,.55)}
+.btn-blue:hover{background:var(--blue-600);transform:translateY(-2px)}
+.btn-white{color:var(--blue);background:#fff;box-shadow:var(--shadow-sm)}
+.btn-white:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.btn-ghost{color:var(--ink);border:1.5px solid var(--line-2);background:#fff}
+.btn-ghost:hover{border-color:var(--blue);color:var(--blue);transform:translateY(-2px)}
+.btn-outline-white{color:#fff;border:1.5px solid rgba(255,255,255,.5)}
+.btn-outline-white:hover{background:rgba(255,255,255,.12);transform:translateY(-2px)}
+.btn-lg{font-size:1.08rem;padding:1.02em 1.8em}
+
+/* ============================ UTILITY BAR ============================ */
+.utility{background:var(--blue-800);color:#cfe2f2;font-size:.82rem}
+.utility .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:40px;padding:.45rem 0}
+.utility-left{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.util-item{display:inline-flex;align-items:center;gap:7px}
+.util-item svg{width:14px;height:14px;color:#7fb2dc;flex:none}
+.util-item b{color:#fff;font-weight:600}
+.utility-right{display:flex;align-items:center;gap:16px}
+.util-phone{display:inline-flex;align-items:center;gap:7px;color:#fff;font-weight:700}
+.util-phone svg{width:14px;height:14px;color:#7fb2dc}
+.util-socials{display:flex;gap:12px}
+.util-socials a{color:#9cc3e2;transition:color .2s}
+.util-socials a:hover{color:#fff}
+.util-socials svg{width:15px;height:15px}
+@media(max-width:860px){.util-item.hide-sm{display:none}.util-socials{display:none}}
+@media(max-width:560px){.utility{display:none}}
+
+/* ============================ NAV ============================ */
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(12px) saturate(140%);
+  border-bottom:1px solid var(--line);transition:box-shadow .3s,padding .3s}
+.nav.shrink{box-shadow:0 10px 30px -18px rgba(10,45,80,.35)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:.7rem 0}
+.brand{display:flex;align-items:center;flex:none}
+.brand img{height:52px;width:auto;transition:height .3s}
+.nav.shrink .brand img{height:46px}
+.nav-links{display:flex;align-items:center;gap:4px}
+.nav-links a{font-family:'Poppins',sans-serif;font-weight:600;font-size:.96rem;color:var(--ink-2);padding:.5em .8em;border-radius:10px;position:relative;transition:color .2s}
+.nav-links a::after{content:"";position:absolute;left:.8em;right:.8em;bottom:.3em;height:2px;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .28s var(--ease);border-radius:2px}
+.nav-links a:hover{color:var(--blue)}
+.nav-links a:hover::after{transform:scaleX(1)}
+.nav-cta{display:flex;align-items:center;gap:14px;flex:none}
+.nav-phone{display:inline-flex;align-items:center;gap:8px;font-family:'Poppins',sans-serif;font-weight:700;font-size:1.08rem;color:var(--blue)}
+.nav-phone svg{width:17px;height:17px}
+.nav-toggle{display:none;width:46px;height:46px;border:1px solid var(--line-2);border-radius:12px;flex-direction:column;gap:5px;align-items:center;justify-content:center}
+.nav-toggle span{width:20px;height:2px;background:var(--ink);border-radius:2px;transition:.3s var(--ease)}
+.nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-toggle.open span:nth-child(2){opacity:0}
+.nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media(max-width:1080px){.nav-phone span{display:none}}
+@media(max-width:960px){.nav-links,.nav-cta .nav-phone,.nav-cta .btn{display:none}.nav-toggle{display:flex}}
+
+/* nav dropdowns */
+.has-drop{position:relative}
+.drop-toggle{display:inline-flex;align-items:center;gap:5px}
+.drop-toggle .caret{width:13px;height:13px;transition:transform .28s var(--ease);color:var(--muted-2)}
+.has-drop:hover .drop-toggle,.has-drop:focus-within .drop-toggle{color:var(--blue)}
+.has-drop:hover .drop-toggle .caret,.has-drop:focus-within .drop-toggle .caret{transform:rotate(180deg);color:var(--blue)}
+.drop-menu{position:absolute;top:100%;left:0;margin-top:12px;background:#fff;border:1px solid var(--line);border-radius:16px;
+  box-shadow:var(--shadow);padding:14px;z-index:60;opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .22s var(--ease),transform .22s var(--ease),visibility .22s}
+.drop-menu::before{content:"";position:absolute;top:-14px;left:0;right:0;height:14px}
+.has-drop:hover .drop-menu,.has-drop:focus-within .drop-menu{opacity:1;visibility:visible;transform:none}
+.drop-services{width:540px;display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.drop-item{display:flex;gap:12px;padding:11px;border-radius:12px;transition:background .2s}
+.drop-item:hover{background:var(--blue-050)}
+.drop-item .di-ico{width:40px;height:40px;flex:none;border-radius:11px;display:grid;place-items:center;background:var(--blue-050);color:var(--blue);transition:.25s}
+.drop-item:hover .di-ico{background:var(--blue);color:#fff}
+.drop-item .di-ico svg{width:21px;height:21px}
+.drop-item b{display:block;font-family:'Poppins';font-weight:600;font-size:.92rem;color:var(--ink);line-height:1.2}
+.drop-item span{font-size:.77rem;color:var(--muted);line-height:1.3}
+.drop-foot{grid-column:1/-1;margin-top:6px;padding:13px 11px 5px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:12px}
+.drop-foot .df-all{font-family:'Poppins';font-weight:600;font-size:.88rem;color:var(--blue);display:inline-flex;align-items:center;gap:6px}
+.drop-foot .df-all svg{width:15px;height:15px;transition:transform .25s}
+.drop-foot .df-all:hover svg{transform:translateX(3px)}
+.drop-foot .df-call{font-family:'Poppins';font-weight:700;font-size:.9rem;color:var(--red);display:inline-flex;align-items:center;gap:6px}
+.drop-foot .df-call svg{width:15px;height:15px}
+.drop-area{width:250px;display:flex;flex-direction:column;gap:2px}
+.drop-area a{display:flex;align-items:center;gap:11px;padding:10px 12px;border-radius:11px;font-family:'Poppins';font-weight:500;font-size:.93rem;color:var(--ink-2);transition:.2s}
+.drop-area a:hover{background:var(--blue-050);color:var(--blue)}
+.drop-area a svg{width:16px;height:16px;color:var(--red)}
+.drop-area .da-head{font-family:'Poppins';font-weight:700;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);padding:6px 12px 8px}
+
+/* mobile drawer sub-links */
+.drawer .dsub{display:flex;flex-direction:column;padding:2px 0 8px 14px}
+.drawer .dsub a{font-family:'Poppins';font-weight:500;font-size:.98rem;color:var(--muted);padding:.5em 0}
+.drawer .dsub a:hover{color:var(--blue)}
+
+/* drawer */
+.drawer{position:fixed;inset:0;z-index:70;pointer-events:none}
+.drawer-scrim{position:absolute;inset:0;background:rgba(10,30,55,.5);opacity:0;transition:opacity .35s}
+.drawer-panel{position:absolute;top:0;right:0;height:100%;width:min(350px,86vw);background:#fff;box-shadow:-30px 0 80px rgba(10,40,75,.25);
+  transform:translateX(100%);transition:transform .4s var(--ease);display:flex;flex-direction:column;padding:22px 22px;gap:4px}
+.drawer.open{pointer-events:auto}
+.drawer.open .drawer-scrim{opacity:1}
+.drawer.open .drawer-panel{transform:none}
+.drawer .dh{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.drawer .dh img{height:44px}
+.drawer-close{width:42px;height:42px;border:1px solid var(--line-2);border-radius:11px;font-size:1.5rem;color:var(--ink);display:grid;place-items:center}
+.drawer a.dl{font-family:'Poppins',sans-serif;font-weight:600;font-size:1.15rem;color:var(--ink);padding:.7em .2em;border-bottom:1px solid var(--line)}
+.drawer-foot{margin-top:auto;display:flex;flex-direction:column;gap:10px;padding-top:14px}
+
+/* ============================ HERO ============================ */
+.hero{position:relative;overflow:hidden;color:#fff;
+  background:radial-gradient(120% 120% at 85% 0%,#0a6aad 0%,var(--blue) 42%,var(--blue-700) 100%)}
+.hero-pattern{position:absolute;inset:0;opacity:.5;pointer-events:none;
+  background-image:radial-gradient(rgba(255,255,255,.14) 1.4px,transparent 1.5px);background-size:26px 26px;
+  mask-image:linear-gradient(180deg,#000,transparent 75%)}
+.hero-photo{position:absolute;right:0;top:0;bottom:0;width:46%;z-index:0;overflow:hidden}
+.hero-photo img{width:100%;height:100%;object-fit:cover;opacity:.22}
+.hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--blue-700),transparent 60%)}
+@media(max-width:900px){.hero-photo{display:none}}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center;
+  padding:clamp(40px,6vw,74px) 0}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr;gap:30px}}
+
+.hero-eyebrow{display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);
+  border-radius:var(--pill);padding:.45em 1em;font-family:'Poppins',sans-serif;font-weight:600;font-size:.82rem;letter-spacing:.01em;margin-bottom:20px}
+.hero-eyebrow .stars{display:inline-flex;gap:2px}
+.hero-eyebrow .stars svg{width:14px;height:14px;color:var(--star)}
+.hero h1{font-size:clamp(2.4rem,5.2vw,3.9rem);margin-bottom:.34em}
+.hero h1 .hl{color:#ffd7df;position:relative;white-space:nowrap}
+.hero-sub{font-size:clamp(1.04rem,1.4vw,1.2rem);color:#dbeaf7;max-width:34em;margin-bottom:26px}
+.hero-cta{display:flex;gap:13px;flex-wrap:wrap;margin-bottom:26px}
+.hero-badges{display:flex;gap:20px;flex-wrap:wrap}
+.hero-badge{display:inline-flex;align-items:center;gap:9px;font-size:.9rem;color:#eaf3fb}
+.hero-badge svg{width:20px;height:20px;color:#8fd0ff;flex:none}
+.hero-badge b{color:#fff;font-weight:700}
+
+/* hero form card */
+.hero-card{background:#fff;color:var(--ink);border-radius:20px;padding:26px 24px;box-shadow:var(--shadow);position:relative}
+.hero-card .hc-tab{position:absolute;top:-14px;left:24px;background:var(--red);color:#fff;font-family:'Poppins';font-weight:700;
+  font-size:.78rem;letter-spacing:.02em;padding:.4em .9em;border-radius:var(--pill);box-shadow:0 10px 20px -8px rgba(188,30,65,.5)}
+.hero-card h3{font-size:1.42rem;margin:6px 0 3px}
+.hero-card .hc-sub{color:var(--muted);font-size:.92rem;margin-bottom:16px}
+.field{margin-bottom:11px}
+.field label{display:block;font-family:'Poppins';font-weight:600;font-size:.78rem;color:var(--ink-2);margin-bottom:5px}
+.field input,.field select,.field textarea{width:100%;padding:.82em .95em;border-radius:12px;border:1.5px solid var(--line-2);
+  background:#fff;color:var(--ink);font-family:inherit;font-size:.96rem;transition:.2s}
+.field input::placeholder,.field textarea::placeholder{color:var(--muted-2)}
+.field input:focus,.field select:focus,.field textarea:focus{outline:0;border-color:var(--blue);box-shadow:0 0 0 4px rgba(0,94,158,.12)}
+.field textarea{resize:vertical;min-height:96px}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+@media(max-width:520px){.frow{grid-template-columns:1fr}}
+.hero-card .btn{width:100%;margin-top:5px}
+.hc-foot{text-align:center;color:var(--muted-2);font-size:.8rem;margin-top:11px}
+.hc-foot a{color:var(--blue);font-weight:600}
+.form-success{display:none;text-align:center;padding:26px 6px}
+.form-success.on{display:block}
+.fs-ico{width:64px;height:64px;border-radius:50%;background:#e8f6ee;display:grid;place-items:center;margin:0 auto 14px}
+.fs-ico svg{width:32px;height:32px;color:#1f9d55}
+.form-success h3{margin-bottom:6px}
+.form-success p{color:var(--muted);font-size:.94rem}
+
+/* ============================ TRUST STRIP ============================ */
+.trust{background:#fff;border-bottom:1px solid var(--line)}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:22px 0}
+@media(max-width:760px){.trust .wrap{grid-template-columns:repeat(2,1fr);gap:20px}}
+.trust-item{display:flex;align-items:center;gap:12px;justify-content:center;text-align:left}
+.trust-item .ti-ico{width:44px;height:44px;flex:none;border-radius:12px;display:grid;place-items:center;background:var(--blue-050);color:var(--blue)}
+.trust-item .ti-ico svg{width:23px;height:23px}
+.trust-item b{display:block;font-family:'Poppins';font-weight:700;font-size:1.02rem;line-height:1.1}
+.trust-item span{color:var(--muted);font-size:.84rem}
+
+/* ============================ SECTION SHELL ============================ */
+.sec{padding:clamp(58px,8vw,104px) 0}
+.sec.tint{background:var(--panel)}
+.sec.blue-tint{background:linear-gradient(180deg,var(--blue-050),#fff)}
+.sec-head{max-width:720px;margin-bottom:48px}
+.sec-head.center{margin-inline:auto;text-align:center}
+.kicker{display:inline-flex;align-items:center;gap:8px;font-family:'Poppins';font-weight:700;text-transform:uppercase;
+  letter-spacing:.12em;font-size:.78rem;color:var(--red);margin-bottom:14px}
+.kicker::before{content:"";width:22px;height:2px;background:var(--red);border-radius:2px}
+.sec-head.center .kicker{justify-content:center}
+.sec-head h2{font-size:clamp(1.9rem,4vw,2.9rem);margin-bottom:.35em;color:var(--ink)}
+.sec-head p{color:var(--muted);font-size:1.06rem}
+.text-blue{color:var(--blue)}
+.text-red{color:var(--red)}
+
+/* ============================ SERVICES ============================ */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media(max-width:940px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.svc-grid{grid-template-columns:1fr}}
+.svc{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px 26px;position:relative;overflow:hidden;
+  transition:transform .35s var(--ease),box-shadow .35s var(--ease),border-color .35s}
+.svc::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--blue);transform:scaleY(0);transform-origin:top;transition:transform .35s var(--ease)}
+.svc:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:transparent}
+.svc:hover::before{transform:scaleY(1)}
+.svc-ico{width:56px;height:56px;border-radius:14px;display:grid;place-items:center;margin-bottom:18px;
+  background:linear-gradient(150deg,var(--blue),var(--blue-700));color:#fff;box-shadow:0 12px 22px -10px rgba(0,94,158,.6)}
+.svc-ico svg{width:28px;height:28px}
+.svc:nth-child(3n+2) .svc-ico{background:linear-gradient(150deg,var(--red),var(--red-700));box-shadow:0 12px 22px -10px rgba(188,30,65,.55)}
+.svc h3{font-size:1.32rem;margin-bottom:.45em}
+.svc p{color:var(--muted);font-size:.95rem;margin-bottom:15px}
+.svc-list{display:flex;flex-wrap:wrap;gap:7px}
+.svc-list span{display:inline-flex;align-items:center;gap:5px;font-size:.8rem;font-weight:600;color:var(--blue);background:var(--blue-050);border-radius:var(--pill);padding:.35em .75em}
+.svc-list span svg{width:12px;height:12px}
+
+/* ============================ WHY / VALUE ============================ */
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
+@media(max-width:940px){.why-grid{grid-template-columns:1fr;gap:34px}}
+.why-media{position:relative}
+.why-media .wm-main{border-radius:20px;overflow:hidden;box-shadow:var(--shadow);border:6px solid #fff}
+.why-media .wm-main img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
+.why-media .wm-badge{position:absolute;right:-14px;bottom:-18px;background:#fff;border-radius:16px;padding:16px 20px;
+  box-shadow:var(--shadow);display:flex;align-items:center;gap:13px;border:1px solid var(--line)}
+.wm-badge .wb-star{width:48px;height:48px;border-radius:12px;background:#fff6e6;display:grid;place-items:center;flex:none}
+.wm-badge .wb-star svg{width:26px;height:26px;color:var(--star)}
+.wm-badge b{font-family:'Poppins';font-weight:800;font-size:1.3rem;display:block;line-height:1}
+.wm-badge .wb-stars{display:flex;gap:1px;margin:3px 0}
+.wm-badge .wb-stars svg{width:12px;height:12px;color:var(--star)}
+.wm-badge span{color:var(--muted);font-size:.78rem}
+.why-list{display:flex;flex-direction:column;gap:8px;margin-top:22px}
+.why-item{display:flex;gap:15px;padding:15px;border-radius:14px;transition:.3s var(--ease)}
+.why-item:hover{background:var(--blue-050)}
+.why-item .wi-ico{width:46px;height:46px;flex:none;border-radius:12px;display:grid;place-items:center;background:var(--red);color:#fff;box-shadow:0 10px 20px -10px rgba(188,30,65,.55)}
+.why-item .wi-ico svg{width:23px;height:23px}
+.why-item h4{font-size:1.14rem;margin-bottom:2px}
+.why-item p{color:var(--muted);font-size:.93rem}
+
+/* ============================ STATS ============================ */
+.stats{background:linear-gradient(150deg,var(--blue),var(--blue-700));color:#fff;position:relative;overflow:hidden}
+.stats .hero-pattern{opacity:.4;mask-image:none}
+.stats .wrap{position:relative;z-index:2;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:clamp(42px,6vw,66px) 0}
+@media(max-width:760px){.stats .wrap{grid-template-columns:repeat(2,1fr);gap:32px 20px}}
+.stat{text-align:center;position:relative}
+.stat:not(:last-child)::after{content:"";position:absolute;right:0;top:15%;bottom:15%;width:1px;background:rgba(255,255,255,.18)}
+@media(max-width:760px){.stat:nth-child(2)::after{display:none}}
+.stat .num{font-family:'Poppins';font-weight:800;font-size:clamp(2.4rem,5vw,3.3rem);line-height:1}
+.stat .num .suf{color:#8fd0ff}
+.stat .lbl{color:#cfe4f5;font-size:.95rem;margin-top:6px;font-weight:500}
+
+/* ============================ PROCESS ============================ */
+.proc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+@media(max-width:880px){.proc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.proc-grid{grid-template-columns:1fr}}
+.proc{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px 24px;position:relative;transition:.35s var(--ease)}
+.proc:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.proc .pn{font-family:'Poppins';font-weight:800;font-size:1.15rem;width:50px;height:50px;border-radius:14px;display:grid;place-items:center;
+  background:var(--blue-050);color:var(--blue);margin-bottom:16px}
+.proc:hover .pn{background:var(--blue);color:#fff}
+.proc h4{font-size:1.22rem;margin-bottom:.4em}
+.proc p{color:var(--muted);font-size:.93rem}
+.proc .parrow{position:absolute;top:44px;right:-12px;width:24px;height:24px;color:var(--line-2);z-index:2}
+@media(max-width:880px){.proc .parrow{display:none}}
+
+/* ============================ SERVICE AREA ============================ */
+.area-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:46px;align-items:center}
+@media(max-width:940px){.area-grid{grid-template-columns:1fr;gap:32px}}
+.area-cities{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.area-cities a{display:inline-flex;align-items:center;gap:7px;font-family:'Poppins';font-weight:600;font-size:.96rem;color:var(--ink-2);
+  border:1.5px solid var(--line-2);border-radius:var(--pill);padding:.5em 1.05em;transition:.25s}
+.area-cities a svg{width:14px;height:14px;color:var(--red)}
+.area-cities a:hover{border-color:var(--blue);color:var(--blue);background:var(--blue-050);transform:translateY(-2px)}
+.area-map{position:relative;border-radius:20px;overflow:hidden;box-shadow:var(--shadow);border:6px solid #fff;min-height:380px;background:var(--panel)}
+.area-map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+.area-map .mchip{position:absolute;left:16px;bottom:16px;z-index:2;pointer-events:none;display:inline-flex;align-items:center;gap:8px;
+  background:#fff;border-radius:var(--pill);padding:.55em 1.05em;font-family:'Poppins';font-weight:700;font-size:.84rem;color:var(--blue);box-shadow:var(--shadow-sm)}
+.area-map .mchip svg{width:15px;height:15px;color:var(--red)}
+
+/* ============================ REVIEWS ============================ */
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media(max-width:900px){.rev-grid{grid-template-columns:1fr}}
+.rev{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px;box-shadow:var(--shadow-sm)}
+.rev .stars{display:flex;gap:2px;margin-bottom:12px}
+.rev .stars svg{width:17px;height:17px;color:var(--star)}
+.rev p{color:var(--ink-2);font-size:1rem;margin-bottom:18px}
+.rev .who{display:flex;align-items:center;gap:12px}
+.rev .av{width:44px;height:44px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font-family:'Poppins';font-weight:700}
+.rev .who b{display:block;font-family:'Poppins';font-weight:700;font-size:1rem}
+.rev .who span{color:var(--muted);font-size:.83rem;display:inline-flex;align-items:center;gap:5px}
+.rev .who span svg{width:13px;height:13px;color:#4285F4}
+
+/* ============================ GALLERY (BENTO) ============================ */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:210px;gap:14px}
+@media(max-width:900px){.gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:160px}}
+.gtile{position:relative;border-radius:16px;overflow:hidden;box-shadow:var(--shadow-sm);border:1px solid var(--line);display:flex;align-items:flex-end;padding:16px}
+.gtile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;transition:transform .6s var(--ease)}
+.gtile::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,transparent 45%,rgba(8,40,70,.82))}
+.gtile:hover img{transform:scale(1.07)}
+.gtile .gcap{position:relative;z-index:2;color:#fff}
+.gtile .gcap .gc-k{font-family:'Poppins';font-weight:700;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:#9fd3ff}
+.gtile .gcap b{font-family:'Poppins';font-weight:700;font-size:1.08rem}
+.g-2x2{grid-column:span 2;grid-row:span 2}.g-2w{grid-column:span 2}
+@media(max-width:900px){.g-2x2{grid-column:span 2;grid-row:span 2}.g-2w{grid-column:span 2}}
+
+/* ============================ FAQ (DROPDOWNS) ============================ */
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 30px;align-items:start}
+@media(max-width:820px){.faq-grid{grid-template-columns:1fr}}
+.faq{border:1px solid var(--line);border-radius:14px;background:#fff;overflow:hidden;transition:box-shadow .3s,border-color .3s}
+.faq.open{box-shadow:var(--shadow-sm);border-color:var(--blue-200)}
+.faq-q{width:100%;display:flex;align-items:center;justify-content:space-between;gap:14px;text-align:left;
+  font-family:'Poppins';font-weight:600;font-size:1.04rem;color:var(--ink);padding:18px 20px}
+.faq-q .fic{width:30px;height:30px;flex:none;border-radius:9px;background:var(--blue-050);color:var(--blue);display:grid;place-items:center;transition:.35s var(--ease)}
+.faq-q .fic svg{width:18px;height:18px}
+.faq.open .faq-q .fic{background:var(--blue);color:#fff;transform:rotate(180deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s var(--ease)}
+.faq-a p{color:var(--muted);font-size:.96rem;padding:0 20px 18px 20px}
+
+/* ============================ CTA BAND ============================ */
+.ctaband{background:linear-gradient(135deg,var(--red) 0%,var(--red-700) 100%);color:#fff;position:relative;overflow:hidden}
+.ctaband .hero-pattern{opacity:.35;mask-image:none}
+.ctaband .wrap{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap;padding:clamp(46px,6vw,72px) 0}
+.ctaband h2{font-size:clamp(1.8rem,3.8vw,2.7rem);margin-bottom:.3em}
+.ctaband p{color:#ffdfe6;font-size:1.08rem;max-width:32em}
+.ctaband-actions{display:flex;gap:13px;flex-wrap:wrap}
+
+/* ============================ CONTACT ============================ */
+.contact-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:46px;align-items:start}
+@media(max-width:940px){.contact-grid{grid-template-columns:1fr;gap:34px}}
+.cc-list{display:flex;flex-direction:column;gap:13px;margin-top:24px}
+.cc{display:flex;gap:15px;padding:18px;border-radius:14px;border:1px solid var(--line);background:#fff;transition:.3s}
+.cc:hover{border-color:var(--blue-200);box-shadow:var(--shadow-sm)}
+.cc .cc-ico{width:46px;height:46px;flex:none;border-radius:12px;display:grid;place-items:center;background:var(--blue-050);color:var(--blue)}
+.cc .cc-ico svg{width:23px;height:23px}
+.cc .cc-l{font-family:'Poppins';font-weight:600;font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.cc .cc-v{font-family:'Poppins';font-weight:700;font-size:1.16rem;color:var(--ink)}
+.cc .cc-v a:hover{color:var(--blue)}
+.cc .cc-s{color:var(--muted);font-size:.86rem}
+.form-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:30px;box-shadow:var(--shadow)}
+.form-card h3{font-size:1.5rem;margin-bottom:5px}
+.form-card .fc-sub{color:var(--muted);font-size:.94rem;margin-bottom:20px}
+.form-card .btn{width:100%;margin-top:6px}
+
+/* ============================ FOOTER ============================ */
+.footer{background:var(--blue-800);color:#bcd4e8;padding:60px 0 0}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:38px;padding-bottom:44px}
+@media(max-width:900px){.foot-grid{grid-template-columns:1fr 1fr;gap:32px}}
+@media(max-width:520px){.foot-grid{grid-template-columns:1fr}}
+.foot-logo{background:#fff;border-radius:14px;padding:12px 16px;display:inline-block;margin-bottom:16px}
+.foot-logo img{height:52px;width:auto}
+.foot-about{font-size:.93rem;line-height:1.7;max-width:32ch;margin-bottom:16px}
+.foot-lic{display:inline-flex;align-items:center;gap:8px;font-family:'Poppins';font-weight:600;font-size:.85rem;color:#fff;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:.5em .85em}
+.foot-lic svg{width:15px;height:15px;color:#8fd0ff}
+.foot-col h5{font-family:'Poppins';font-weight:700;font-size:.95rem;color:#fff;margin-bottom:15px}
+.foot-col a,.foot-col p{display:block;color:#bcd4e8;font-size:.93rem;padding:.3em 0;transition:color .2s}
+.foot-col a:hover{color:#fff}
+.foot-phones a{font-family:'Poppins';font-weight:700;font-size:1.15rem;color:#fff}
+.foot-socials{display:flex;gap:10px;margin-top:14px}
+.foot-socials a{width:40px;height:40px;border-radius:11px;background:rgba(255,255,255,.09);display:grid;place-items:center;color:#cfe2f2;transition:.3s}
+.foot-socials a:hover{background:#fff;color:var(--blue);transform:translateY(-3px)}
+.foot-socials svg{width:18px;height:18px}
+.foot-bar{border-top:1px solid rgba(255,255,255,.12);padding:20px 0;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:.84rem;color:#9cbdd7}
+.foot-bar a{color:#9cbdd7}.foot-bar a:hover{color:#fff}
+
+/* ============================ STICKY MOBILE CALL BAR ============================ */
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:65;display:none;gap:10px;padding:10px 12px;background:#fff;border-top:1px solid var(--line);box-shadow:0 -10px 30px -18px rgba(10,40,75,.4)}
+.callbar .btn{flex:1;padding:.85em 1em;font-size:.98rem}
+@media(max-width:560px){.callbar{display:flex}body{padding-bottom:70px}}
+
+/* ============================ REVEAL ============================ */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.reveal[data-d="1"]{transition-delay:.08s}.reveal[data-d="2"]{transition-delay:.16s}
+.reveal[data-d="3"]{transition-delay:.24s}.reveal[data-d="4"]{transition-delay:.32s}
+.reveal[data-d="5"]{transition-delay:.4s}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}*{animation:none!important}}
+</style>
+</head>
+<body>
+
+<!-- ============================ ICON SPRITE ============================ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5l-8-3z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></symbol>
+  <symbol id="i-drain" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18M6.3 6.3l11.4 11.4M17.7 6.3 6.3 17.7"/></symbol>
+  <symbol id="i-heater" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="18" rx="4"/><path d="M12 3v3M9 9h6M9 12h6"/><circle cx="12" cy="16.5" r="1.6"/></symbol>
+  <symbol id="i-sewer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h6a2 2 0 0 1 2 2v0a2 2 0 0 0 2 2h8M3 7v10M21 11v6a2 2 0 0 1-2 2H5"/></symbol>
+  <symbol id="i-leak" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.7S6 9 6 14a6 6 0 0 0 12 0c0-5-6-11.3-6-11.3z"/><path d="M12 18a4 4 0 0 1-4-4"/></symbol>
+  <symbol id="i-wrench" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.3 2.3-2.7-.7-.7-2.7 2.4-2.2z"/></symbol>
+  <symbol id="i-flame" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2s5 4.5 5 10a5 5 0 0 1-10 0c0-1.5.5-2.8 1.2-3.8C9 10 10 11 10 12c0-2 1-4 2-5 0 1.5 1 2.5 1.5 3 .5-1 .5-3-1.5-8z"/></symbol>
+  <symbol id="i-drop" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5S6 9 6 14a6 6 0 0 0 12 0c0-5-6-11.5-6-11.5z"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 12 3l9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7z"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></symbol>
+  <symbol id="i-dollar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M8.5 13.5 7 22l5-3 5 3-1.5-8.5"/></symbol>
+  <symbol id="i-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7L22 6"/></symbol>
+  <symbol id="i-tools" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.3 2.3-2.7-.7-.7-2.7 2.4-2.2z"/></symbol>
+  <symbol id="i-building" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V6a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v15"/><path d="M14 9h4a2 2 0 0 1 2 2v10"/><path d="M2 21h20M8 8h2M8 12h2M8 16h2"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="5"/><path d="m11.5 11.5 8-8M17 3l3 3M15 5.5l2.5 2.5"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-google" viewBox="0 0 24 24" fill="currentColor"><path d="M21.8 12.2c0-.7-.1-1.4-.2-2H12v3.8h5.5a4.7 4.7 0 0 1-2 3.1v2.6h3.2c1.9-1.7 3-4.3 3-7.5z"/><path d="M12 22c2.7 0 5-.9 6.7-2.4l-3.2-2.6c-.9.6-2 .9-3.5.9-2.7 0-5-1.8-5.8-4.3H2.9v2.7A10 10 0 0 0 12 22z"/><path d="M6.2 13.6a6 6 0 0 1 0-3.8V7.1H2.9a10 10 0 0 0 0 9z"/><path d="M12 6.4c1.5 0 2.8.5 3.8 1.5l2.8-2.8A10 10 0 0 0 2.9 7.1l3.3 2.7C7 7.3 9.3 6.4 12 6.4z"/></symbol>
+</defs></svg>
+
+<!-- ============================ UTILITY BAR ============================ -->
+<div class="utility">
+  <div class="wrap">
+    <div class="utility-left">
+      <span class="util-item"><svg><use href="#i-shield"/></svg> Licensed, Insured &amp; Bonded · <b>CSLB #877139</b></span>
+      <span class="util-item hide-sm"><svg><use href="#i-clock"/></svg> <b>Mon–Sat</b> · 8am–5pm</span>
+      <span class="util-item hide-sm"><svg><use href="#i-pin"/></svg> Serving the Central Valley</span>
+    </div>
+    <div class="utility-right">
+      <a class="util-phone" href="tel:+12096692090"><svg><use href="#i-phone"/></svg> (209) 669-2090</a>
+      <div class="util-socials">
+        <a href="https://www.facebook.com/premiumplumbinganddraininc/" aria-label="Facebook" target="_blank" rel="noopener"><svg><use href="#i-fb"/></svg></a>
+        <a href="https://instagram.com/premium_plumbing.inc" aria-label="Instagram" target="_blank" rel="noopener"><svg><use href="#i-ig"/></svg></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================ NAV ============================ -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#top" class="brand" aria-label="Premium Plumbing & Drain, Inc. home">
+      <img src="logo.png" alt="Premium Plumbing & Drain, Inc." />
+    </a>
+    <nav class="nav-links">
+      <div class="has-drop">
+        <a href="#services" class="drop-toggle">Services <svg class="caret"><use href="#i-chevron"/></svg></a>
+        <div class="drop-menu drop-services">
+          <a class="drop-item" href="#services"><span class="di-ico"><svg><use href="#i-home"/></svg></span><span><b>Residential Plumbing</b><span>Repairs &amp; installs for your home</span></span></a>
+          <a class="drop-item" href="#services"><span class="di-ico"><svg><use href="#i-building"/></svg></span><span><b>Commercial Plumbing</b><span>Service for your business</span></span></a>
+          <a class="drop-item" href="#services"><span class="di-ico"><svg><use href="#i-drain"/></svg></span><span><b>Sewer &amp; Drain Cleaning</b><span>Clogs cleared, drains flowing</span></span></a>
+          <a class="drop-item" href="#services"><span class="di-ico"><svg><use href="#i-drop"/></svg></span><span><b>Hydro Jetting</b><span>High-pressure line cleaning</span></span></a>
+          <a class="drop-item" href="#services"><span class="di-ico"><svg><use href="#i-heater"/></svg></span><span><b>Water Heaters</b><span>Repair &amp; replacement</span></span></a>
+          <a class="drop-item" href="#services"><span class="di-ico"><svg><use href="#i-wrench"/></svg></span><span><b>Water Pipe Repair</b><span>Leaks, repipes &amp; slab leaks</span></span></a>
+          <a class="drop-item" href="#services"><span class="di-ico"><svg><use href="#i-key"/></svg></span><span><b>Property Management</b><span>Reliable service for your units</span></span></a>
+          <a class="drop-item" href="#contact"><span class="di-ico"><svg><use href="#i-bolt"/></svg></span><span><b>Same-Day / Emergency</b><span>Fast response when it counts</span></span></a>
+          <div class="drop-foot">
+            <a class="df-all" href="#services">View all services <svg><use href="#i-arrow"/></svg></a>
+            <a class="df-call" href="tel:+12096692090"><svg><use href="#i-phone"/></svg> (209) 669-2090</a>
+          </div>
+        </div>
+      </div>
+      <a href="#why">Why Us</a>
+      <div class="has-drop">
+        <a href="#area" class="drop-toggle">Service Area <svg class="caret"><use href="#i-chevron"/></svg></a>
+        <div class="drop-menu drop-area">
+          <div class="da-head">Central Valley, CA</div>
+          <a href="#area"><svg><use href="#i-pin"/></svg> Modesto</a>
+          <a href="#area"><svg><use href="#i-pin"/></svg> Turlock</a>
+          <a href="#area"><svg><use href="#i-pin"/></svg> Tracy</a>
+          <a href="#area"><svg><use href="#i-pin"/></svg> Stockton</a>
+          <a href="#area"><svg><use href="#i-pin"/></svg> Merced</a>
+          <a href="#area" style="color:var(--blue);font-weight:600"><svg><use href="#i-arrow"/></svg> See all areas</a>
+        </div>
+      </div>
+      <a href="#reviews">Reviews</a>
+      <a href="#photos">Photos</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="nav-phone" href="tel:+12096692090"><svg><use href="#i-phone"/></svg><span>(209) 669-2090</span></a>
+      <a class="btn btn-red" href="#contact">Book Same-Day</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- drawer -->
+<div class="drawer" id="drawer">
+  <div class="drawer-scrim" data-close></div>
+  <div class="drawer-panel">
+    <div class="dh"><img src="logo.png" alt="Premium Plumbing & Drain, Inc."><button class="drawer-close" data-close aria-label="Close">&times;</button></div>
+    <a class="dl" href="#services" data-close>Services</a>
+    <div class="dsub">
+      <a href="#services" data-close>Residential Plumbing</a>
+      <a href="#services" data-close>Commercial Plumbing</a>
+      <a href="#services" data-close>Sewer &amp; Drain Cleaning</a>
+      <a href="#services" data-close>Hydro Jetting</a>
+      <a href="#services" data-close>Water Heaters</a>
+      <a href="#services" data-close>Water Pipe Repair</a>
+      <a href="#services" data-close>Property Management</a>
+    </div>
+    <a class="dl" href="#why" data-close>Why Us</a>
+    <a class="dl" href="#area" data-close>Service Area</a>
+    <a class="dl" href="#reviews" data-close>Reviews</a>
+    <a class="dl" href="#photos" data-close>Photos</a>
+    <a class="dl" href="#faq" data-close>FAQ</a>
+    <a class="dl" href="#contact" data-close>Contact</a>
+    <div class="drawer-foot">
+      <a class="btn btn-ghost" href="tel:+12096692090"><svg><use href="#i-phone"/></svg> (209) 669-2090</a>
+      <a class="btn btn-red" href="#contact" data-close>Book Same-Day</a>
+    </div>
+  </div>
+</div>
+
+<span id="top"></span>
+
+<!-- ============================ HERO ============================ -->
+<section class="hero">
+  <div class="hero-pattern"></div>
+  <div class="hero-photo"><img src="img/hero.jpg" alt="" aria-hidden="true" onerror="this.parentElement.style.display='none'"></div>
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="hero-eyebrow reveal">
+        <span class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+        5-Star Rated · Family Owned &amp; Operated
+      </span>
+      <h1 class="reveal" data-d="1">Honest, Expert Plumbing Services You <span class="hl">Deserve</span></h1>
+      <p class="hero-sub reveal" data-d="2">Your trusted, family-owned Central Valley plumbers since 2006. From clogged drains to water heaters, sewer lines and leaks — we get it done right the first time, with honest pricing and no mess left behind.</p>
+      <div class="hero-cta reveal" data-d="3">
+        <a class="btn btn-red btn-lg" href="tel:+12096692090"><svg><use href="#i-phone"/></svg> Call (209) 669-2090</a>
+        <a class="btn btn-white btn-lg" href="#contact"><svg><use href="#i-cal"/></svg> Book Online</a>
+      </div>
+      <div class="hero-badges reveal" data-d="4">
+        <span class="hero-badge"><svg><use href="#i-bolt"/></svg> <b>Same-Day</b>&nbsp;Service</span>
+        <span class="hero-badge"><svg><use href="#i-shield"/></svg> <b>Licensed</b>&nbsp;#877139</span>
+        <span class="hero-badge"><svg><use href="#i-heart"/></svg> <b>Family</b>&nbsp;Owned</span>
+      </div>
+    </div>
+
+    <div class="hero-card reveal" data-d="2">
+      <span class="hc-tab">FAST RESPONSE</span>
+      <form id="heroForm" novalidate>
+        <div id="hfBody">
+          <h3>Request Service</h3>
+          <p class="hc-sub">Tell us what's going on — we'll call you right back.</p>
+          <div class="frow">
+            <div class="field"><label>Name</label><input type="text" name="name" placeholder="Your name" autocomplete="name" required></div>
+            <div class="field"><label>Phone</label><input type="tel" name="phone" placeholder="(209) 000-0000" autocomplete="tel" required></div>
+          </div>
+          <div class="field"><label>How can we help?</label>
+            <select name="service">
+              <option value="">Select a service…</option>
+              <option>Drain Cleaning / Hydro Jetting</option>
+              <option>Water Heater</option>
+              <option>Sewer / Trenchless</option>
+              <option>Leak Detection / Slab Leak</option>
+              <option>Faucets / Toilets / Fixtures</option>
+              <option>Gas or Water Lines</option>
+              <option>Emergency / Same-Day</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field"><label>City</label><input type="text" name="city" placeholder="Modesto, Turlock, Merced…"></div>
+          <button type="submit" class="btn btn-red btn-lg">Get My Free Estimate <svg><use href="#i-arrow"/></svg></button>
+          <p class="hc-foot">Prefer to talk? Call <a href="tel:+12096692090">(209) 669-2090</a></p>
+        </div>
+        <div class="form-success" id="hfSuccess">
+          <div class="fs-ico"><svg><use href="#i-check"/></svg></div>
+          <h3>Thanks — request received!</h3>
+          <p>A member of the Premium team will reach out shortly. For anything urgent, call <b>(209) 669-2090</b>.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ TRUST STRIP ============================ -->
+<div class="trust">
+  <div class="wrap">
+    <div class="trust-item"><div class="ti-ico"><svg><use href="#i-star"/></svg></div><div><b>5-Star Rated</b><span>Loved on Google</span></div></div>
+    <div class="trust-item"><div class="ti-ico"><svg><use href="#i-bolt"/></svg></div><div><b>Same-Day Service</b><span>Fast response</span></div></div>
+    <div class="trust-item"><div class="ti-ico"><svg><use href="#i-shield"/></svg></div><div><b>Licensed &amp; Insured</b><span>CSLB #877139</span></div></div>
+    <div class="trust-item"><div class="ti-ico"><svg><use href="#i-heart"/></svg></div><div><b>Family Owned</b><span>Treated like family</span></div></div>
+  </div>
+</div>
+
+<!-- ============================ SERVICES ============================ -->
+<section class="sec" id="services">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="kicker">What We Do</span>
+      <h2>Full-Service Plumbing for <span class="text-blue">Home &amp; Business</span></h2>
+      <p>One trusted local team for everything from a slow drain to a full sewer replacement — done right, guaranteed.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc reveal">
+        <div class="svc-ico"><svg><use href="#i-drain"/></svg></div>
+        <h3>Drain Cleaning &amp; Hydro Jetting</h3>
+        <p>Fast, thorough clearing of stubborn clogs — plus high-pressure hydro jetting that scours lines clean and keeps them flowing.</p>
+        <div class="svc-list"><span><svg><use href="#i-check"/></svg>Drain Cleaning</span><span><svg><use href="#i-check"/></svg>Hydro Jetting</span><span><svg><use href="#i-check"/></svg>Drain Line Repair</span></div>
+      </article>
+      <article class="svc reveal" data-d="1">
+        <div class="svc-ico"><svg><use href="#i-heater"/></svg></div>
+        <h3>Water Heaters</h3>
+        <p>Repairs, replacements and upgrades for tank &amp; tankless units — restoring hot water fast with dependable, code-compliant installs.</p>
+        <div class="svc-list"><span><svg><use href="#i-check"/></svg>Repair</span><span><svg><use href="#i-check"/></svg>Replacement</span><span><svg><use href="#i-check"/></svg>Tankless</span></div>
+      </article>
+      <article class="svc reveal" data-d="2">
+        <div class="svc-ico"><svg><use href="#i-sewer"/></svg></div>
+        <h3>Sewer &amp; Trenchless</h3>
+        <p>Sewer line repair, camera inspection and trenchless sewer replacement — fixing the problem underground without tearing up your yard.</p>
+        <div class="svc-list"><span><svg><use href="#i-check"/></svg>Sewer Lines</span><span><svg><use href="#i-check"/></svg>Trenchless</span><span><svg><use href="#i-check"/></svg>Camera Inspection</span></div>
+      </article>
+      <article class="svc reveal">
+        <div class="svc-ico"><svg><use href="#i-leak"/></svg></div>
+        <h3>Leak Detection &amp; Slab Leaks</h3>
+        <p>Advanced leak detection to pinpoint hidden leaks — including slab leak repair — before they damage your floors, walls or foundation.</p>
+        <div class="svc-list"><span><svg><use href="#i-check"/></svg>Leak Detection</span><span><svg><use href="#i-check"/></svg>Slab Leaks</span><span><svg><use href="#i-check"/></svg>Pipe Repair</span></div>
+      </article>
+      <article class="svc reveal" data-d="1">
+        <div class="svc-ico"><svg><use href="#i-wrench"/></svg></div>
+        <h3>Fixtures &amp; Repairs</h3>
+        <p>Faucets, toilets, water lines and everyday plumbing repairs — installed and serviced cleanly, so everything works the way it should.</p>
+        <div class="svc-list"><span><svg><use href="#i-check"/></svg>Faucets</span><span><svg><use href="#i-check"/></svg>Toilets</span><span><svg><use href="#i-check"/></svg>Water Lines</span></div>
+      </article>
+      <article class="svc reveal" data-d="2">
+        <div class="svc-ico"><svg><use href="#i-flame"/></svg></div>
+        <h3>Gas Lines &amp; Maintenance</h3>
+        <p>Safe gas line installation and repair, plus preventative maintenance plans that catch small issues before they become big ones.</p>
+        <div class="svc-list"><span><svg><use href="#i-check"/></svg>Gas Lines</span><span><svg><use href="#i-check"/></svg>Maintenance</span><span><svg><use href="#i-check"/></svg>Inspections</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ WHY US ============================ -->
+<section class="sec tint" id="why">
+  <div class="wrap why-grid">
+    <div class="why-media reveal">
+      <div class="wm-main"><img src="img/about.jpg" alt="Premium Plumbing & Drain technician at work" onerror="this.style.opacity='0'"></div>
+      <div class="wm-badge">
+        <div class="wb-star"><svg><use href="#i-star"/></svg></div>
+        <div>
+          <b>5.0</b>
+          <div class="wb-stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <span>Rated by our customers</span>
+        </div>
+      </div>
+    </div>
+    <div class="why-copy">
+      <div class="sec-head reveal" style="margin-bottom:6px">
+        <span class="kicker">Why Premium</span>
+        <h2>A Local Team You Can <span class="text-blue">Actually Trust</span></h2>
+        <p>Serving the Central Valley since 2006, we've built our reputation on reliability and excellence. Plumbing isn't just about pipes — it's about protecting the homes and people who depend on them. Here's what that means for you.</p>
+      </div>
+      <div class="why-list">
+        <div class="why-item reveal"><div class="wi-ico"><svg><use href="#i-bolt"/></svg></div><div><h4>Same-Day Service</h4><p>Plumbing problems don't wait, so we don't either. Call in the morning and get help the same day.</p></div></div>
+        <div class="why-item reveal" data-d="1"><div class="wi-ico"><svg><use href="#i-dollar"/></svg></div><div><h4>Honest, Upfront Pricing</h4><p>Clear communication and fair pricing before we start — no surprises, no pressure, no gimmicks.</p></div></div>
+        <div class="why-item reveal" data-d="2"><div class="wi-ico"><svg><use href="#i-heart"/></svg></div><div><h4>Family Owned &amp; Operated</h4><p>Every customer is treated like family and every job — big or small — gets the same commitment to excellence.</p></div></div>
+        <div class="why-item reveal" data-d="3"><div class="wi-ico"><svg><use href="#i-shield"/></svg></div><div><h4>Licensed, Insured &amp; Bonded</h4><p>Fully licensed under CSLB #877139 — so the work is done right, to code, and backed by our name.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ STATS ============================ -->
+<section class="stats">
+  <div class="hero-pattern"></div>
+  <div class="wrap">
+    <div class="stat reveal"><div class="num"><span data-count="5">0</span><span class="suf">★</span></div><div class="lbl">Google Rating</div></div>
+    <div class="stat reveal" data-d="1"><div class="num"><span class="suf" style="font-size:.5em;color:#8fd0ff">Since</span> <span data-count="2006">0</span></div><div class="lbl">Serving the Valley</div></div>
+    <div class="stat reveal" data-d="2"><div class="num"><span data-count="5">0</span></div><div class="lbl">Cities Served</div></div>
+    <div class="stat reveal" data-d="3"><div class="num"><span data-count="100">0</span><span class="suf">%</span></div><div class="lbl">Satisfaction Guaranteed</div></div>
+  </div>
+</section>
+
+<!-- ============================ PROCESS ============================ -->
+<section class="sec" id="process">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="kicker">How It Works</span>
+      <h2>Fast, Simple &amp; <span class="text-blue">Stress-Free</span></h2>
+      <p>Getting your plumbing fixed shouldn't be complicated. Here's how easy we make it.</p>
+    </div>
+    <div class="proc-grid">
+      <div class="proc reveal"><div class="pn">1</div><svg class="parrow"><use href="#i-arrow"/></svg><h4>Give Us a Call</h4><p>Reach out by phone or book online. We'll listen, answer questions, and schedule your visit — often same-day.</p></div>
+      <div class="proc reveal" data-d="1"><div class="pn">2</div><svg class="parrow"><use href="#i-arrow"/></svg><h4>Upfront Quote</h4><p>A licensed pro diagnoses the issue and gives you honest, upfront pricing before any work begins.</p></div>
+      <div class="proc reveal" data-d="2"><div class="pn">3</div><svg class="parrow"><use href="#i-arrow"/></svg><h4>Quality Repair</h4><p>We get the job done right the first time — cleanly, to code, and with respect for your home.</p></div>
+      <div class="proc reveal" data-d="3"><div class="pn">4</div><h4>Peace of Mind</h4><p>We stand behind our work and leave you with a system that's running smoothly. Simple as that.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SERVICE AREA ============================ -->
+<section class="sec blue-tint" id="area">
+  <div class="wrap area-grid">
+    <div class="reveal">
+      <div class="sec-head" style="margin-bottom:8px">
+        <span class="kicker">Where We Work</span>
+        <h2>Proudly Serving the <span class="text-blue">Central Valley</span></h2>
+        <p>Family-owned and locally based in Turlock — serving homeowners &amp; businesses from Sacramento to Fresno with fast, friendly plumbing service.</p>
+      </div>
+      <div class="area-cities">
+        <a href="#contact"><svg><use href="#i-pin"/></svg> Modesto</a>
+        <a href="#contact"><svg><use href="#i-pin"/></svg> Turlock</a>
+        <a href="#contact"><svg><use href="#i-pin"/></svg> Tracy</a>
+        <a href="#contact"><svg><use href="#i-pin"/></svg> Stockton</a>
+        <a href="#contact"><svg><use href="#i-pin"/></svg> Merced</a>
+        <a href="#contact"><svg><use href="#i-pin"/></svg> &amp; Surrounding Areas</a>
+      </div>
+    </div>
+    <div class="area-map reveal" data-d="1">
+      <iframe title="Premium Plumbing & Drain service area — Central Valley, CA" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen
+        src="https://www.google.com/maps?q=Turlock,+CA&amp;z=9&amp;hl=en&amp;output=embed"></iframe>
+      <span class="mchip"><svg><use href="#i-pin"/></svg> Based in Turlock, CA</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ REVIEWS ============================ -->
+<section class="sec" id="reviews">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="kicker">Reviews</span>
+      <h2>What Our <span class="text-blue">Neighbors Say</span></h2>
+      <p>Old-fashioned customer service that keeps the Central Valley calling us back. <!-- [PH] swap for real Google reviews --></p>
+    </div>
+    <div class="rev-grid">
+      <div class="rev reveal">
+        <div class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+        <p>"Called in the morning with a clogged main line and they were out same-day. Fair price, super professional, and cleaned up after. Highly recommend!"</p>
+        <div class="who"><div class="av">SM</div><div><b>Sarah M.</b><span><svg><use href="#i-google"/></svg> Modesto, CA</span></div></div>
+      </div>
+      <div class="rev reveal" data-d="1">
+        <div class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+        <p>"Our water heater died on a Saturday. Premium had a new one installed by the afternoon. Honest, upfront pricing and no upselling. These guys are the real deal."</p>
+        <div class="who"><div class="av">JR</div><div><b>James R.</b><span><svg><use href="#i-google"/></svg> Turlock, CA</span></div></div>
+      </div>
+      <div class="rev reveal" data-d="2">
+        <div class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+        <p>"Found and fixed a slab leak other plumbers couldn't locate. Respectful of our home, explained everything clearly. Truly treat you like family."</p>
+        <div class="who"><div class="av">LT</div><div><b>Linda T.</b><span><svg><use href="#i-google"/></svg> Merced, CA</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ PHOTOS (BENTO) ============================ -->
+<section class="sec tint" id="photos">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">Our Work</span>
+      <h2>Real Jobs, <span class="text-blue">Real Results</span></h2>
+      <p>A look at recent work from our crews across the Central Valley — sewer camera inspections, repipes, valve replacements and more.</p>
+    </div>
+    <div class="gallery">
+      <div class="gtile g-2x2 reveal"><img src="img/work-1.jpg" alt="Under-sink plumbing repair"><div class="gcap"><div class="gc-k">Fixtures</div><b>Under-Sink &amp; Fixture Repair</b></div></div>
+      <div class="gtile g-2w reveal" data-d="1"><img src="img/work-2.jpg" alt="Shower valve replacement"><div class="gcap"><div class="gc-k">Repipe</div><b>Shower Valve Replacement</b></div></div>
+      <div class="gtile reveal" data-d="2"><img src="img/work-3.jpg" alt="Sewer camera inspection"><div class="gcap"><div class="gc-k">Sewer</div><b>Camera Inspection</b></div></div>
+      <div class="gtile reveal" data-d="3"><img src="img/work-4.jpg" alt="Water line repair behind wall"><div class="gcap"><div class="gc-k">Water Lines</div><b>Water Line Repair</b></div></div>
+      <div class="gtile g-2w reveal"><img src="img/work-5.jpg" alt="Trenchless sewer camera diagnosis"><div class="gcap"><div class="gc-k">Trenchless</div><b>Sewer Line Diagnosis</b></div></div>
+      <div class="gtile g-2w reveal" data-d="1"><img src="img/work-6.jpg" alt="Sewer line root intrusion located by camera"><div class="gcap"><div class="gc-k">Drain &amp; Sewer</div><b>Root Intrusion Located</b></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FAQ (DROPDOWNS) ============================ -->
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="kicker">Good to Know</span>
+      <h2>Frequently Asked <span class="text-blue">Questions</span></h2>
+      <p>Quick answers to what homeowners ask us most.</p>
+    </div>
+    <div class="faq-grid">
+      <div class="faq reveal">
+        <button class="faq-q" aria-expanded="false"><span>Do you offer same-day service?</span><span class="fic"><svg><use href="#i-chevron"/></svg></span></button>
+        <div class="faq-a"><p>Yes! We know plumbing problems can't wait. In most cases we can be out the same day you call — just reach us at (209) 669-2090 and we'll get you on the schedule fast.</p></div>
+      </div>
+      <div class="faq reveal" data-d="1">
+        <button class="faq-q" aria-expanded="false"><span>Are you licensed and insured?</span><span class="fic"><svg><use href="#i-chevron"/></svg></span></button>
+        <div class="faq-a"><p>Absolutely. Premium Plumbing &amp; Drain is fully licensed, insured and bonded under California CSLB License #877139 — so every job is done to code and backed by our name.</p></div>
+      </div>
+      <div class="faq reveal">
+        <button class="faq-q" aria-expanded="false"><span>What areas do you serve?</span><span class="fic"><svg><use href="#i-chevron"/></svg></span></button>
+        <div class="faq-a"><p>We proudly serve Modesto, Turlock, Tracy, Stockton, Merced and the surrounding Central Valley communities. Not sure if you're in our area? Just give us a call.</p></div>
+      </div>
+      <div class="faq reveal" data-d="1">
+        <button class="faq-q" aria-expanded="false"><span>Do you offer free estimates?</span><span class="fic"><svg><use href="#i-chevron"/></svg></span></button>
+        <div class="faq-a"><p>We provide clear, upfront pricing before any work begins so you always know what to expect. <em>[PH] — confirm free-estimate policy &amp; any fees.</em></p></div>
+      </div>
+      <div class="faq reveal">
+        <button class="faq-q" aria-expanded="false"><span>What plumbing services do you provide?</span><span class="fic"><svg><use href="#i-chevron"/></svg></span></button>
+        <div class="faq-a"><p>Everything residential: drain cleaning &amp; hydro jetting, water heaters, sewer &amp; trenchless replacement, leak detection, slab leaks, faucets, toilets, water &amp; gas lines, and preventative maintenance.</p></div>
+      </div>
+      <div class="faq reveal" data-d="1">
+        <button class="faq-q" aria-expanded="false"><span>Do you handle plumbing emergencies?</span><span class="fic"><svg><use href="#i-chevron"/></svg></span></button>
+        <div class="faq-a"><p>Yes — burst pipes, major leaks and backed-up sewers need fast attention. Call us right away and we'll prioritize getting your home protected and back to normal.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ CTA BAND ============================ -->
+<section class="ctaband">
+  <div class="hero-pattern"></div>
+  <div class="wrap">
+    <div class="reveal">
+      <h2>Plumbing Problem? We're Ready to Help.</h2>
+      <p>Same-day service across the Central Valley from a family-owned team you can trust. Call now or request service online.</p>
+    </div>
+    <div class="ctaband-actions reveal" data-d="1">
+      <a class="btn btn-white btn-lg" href="tel:+12096692090"><svg><use href="#i-phone"/></svg> (209) 669-2090</a>
+      <a class="btn btn-outline-white btn-lg" href="#contact"><svg><use href="#i-cal"/></svg> Book Online</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ CONTACT ============================ -->
+<section class="sec" id="contact">
+  <div class="wrap contact-grid">
+    <div class="reveal">
+      <div class="sec-head" style="margin-bottom:6px">
+        <span class="kicker">Get In Touch</span>
+        <h2>Book Your <span class="text-blue">Service Today</span></h2>
+        <p>Call us or send a message and we'll get right back to you with next steps.</p>
+      </div>
+      <div class="cc-list">
+        <div class="cc"><div class="cc-ico"><svg><use href="#i-phone"/></svg></div><div><div class="cc-l">Call or Text</div><div class="cc-v"><a href="tel:+12096692090">(209) 669-2090</a></div><div class="cc-s">Same-day service available</div></div></div>
+        <div class="cc"><div class="cc-ico"><svg><use href="#i-pin"/></svg></div><div><div class="cc-l">Location</div><div class="cc-v">2475 Acme Ct, Turlock, CA</div><div class="cc-s">Serving the greater Central Valley</div></div></div>
+        <div class="cc"><div class="cc-ico"><svg><use href="#i-clock"/></svg></div><div><div class="cc-l">Hours</div><div class="cc-v">Mon–Sat · 8am–5pm</div><div class="cc-s">Emergency service available</div></div></div>
+        <div class="cc"><div class="cc-ico"><svg><use href="#i-shield"/></svg></div><div><div class="cc-l">License</div><div class="cc-v">CSLB #877139</div><div class="cc-s">Licensed, insured &amp; bonded</div></div></div>
+      </div>
+    </div>
+    <div class="reveal" data-d="1">
+      <form class="form-card" id="contactForm" novalidate>
+        <div id="cfBody">
+          <h3>Request Service</h3>
+          <p class="fc-sub">Fill out the form and we'll be in touch shortly.</p>
+          <div class="frow">
+            <div class="field"><label>Full Name</label><input type="text" name="name" placeholder="Jane Homeowner" required></div>
+            <div class="field"><label>Phone</label><input type="tel" name="phone" placeholder="(209) 000-0000" required></div>
+          </div>
+          <div class="frow">
+            <div class="field"><label>Email</label><input type="email" name="email" placeholder="you@email.com"></div>
+            <div class="field"><label>City</label><input type="text" name="city" placeholder="Modesto, Turlock…"></div>
+          </div>
+          <div class="field"><label>Service Needed</label>
+            <select name="service">
+              <option value="">Select a service…</option>
+              <option>Drain Cleaning / Hydro Jetting</option>
+              <option>Water Heater</option>
+              <option>Sewer / Trenchless</option>
+              <option>Leak Detection / Slab Leak</option>
+              <option>Faucets / Toilets / Fixtures</option>
+              <option>Gas or Water Lines</option>
+              <option>Emergency / Same-Day</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field"><label>How can we help?</label><textarea name="message" placeholder="Tell us about the issue…"></textarea></div>
+          <button type="submit" class="btn btn-red btn-lg">Send Request <svg><use href="#i-arrow"/></svg></button>
+          <p class="hc-foot">Or call us directly at <a href="tel:+12096692090">(209) 669-2090</a></p>
+        </div>
+        <div class="form-success" id="cfSuccess">
+          <div class="fs-ico"><svg><use href="#i-check"/></svg></div>
+          <h3>Thanks — we got it!</h3>
+          <p>A member of the Premium Plumbing team will reach out shortly. For urgent issues, call <b>(209) 669-2090</b>.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <span class="foot-logo"><img src="logo.png" alt="Premium Plumbing & Drain, Inc."></span>
+        <p class="foot-about">Family-owned plumbing &amp; drain experts serving Modesto, Turlock, Tracy, Stockton, Merced &amp; the Central Valley — honest service, quality work, same-day response.</p>
+        <span class="foot-lic"><svg><use href="#i-shield"/></svg> CSLB #877139 · Licensed, Insured &amp; Bonded</span>
+        <div class="foot-socials">
+          <a href="https://www.facebook.com/premiumplumbinganddraininc/" aria-label="Facebook" target="_blank" rel="noopener"><svg><use href="#i-fb"/></svg></a>
+          <a href="https://instagram.com/premium_plumbing.inc" aria-label="Instagram" target="_blank" rel="noopener"><svg><use href="#i-ig"/></svg></a>
+          <a href="https://premiumplumbinginc.com/" aria-label="Google Business Profile" target="_blank" rel="noopener"><svg><use href="#i-google"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h5>Services</h5>
+        <a href="#services">Drain Cleaning</a>
+        <a href="#services">Hydro Jetting</a>
+        <a href="#services">Water Heaters</a>
+        <a href="#services">Sewer &amp; Trenchless</a>
+        <a href="#services">Leak Detection</a>
+        <a href="#services">Gas &amp; Water Lines</a>
+      </div>
+      <div class="foot-col">
+        <h5>Service Area</h5>
+        <a href="#area">Modesto</a>
+        <a href="#area">Turlock</a>
+        <a href="#area">Tracy</a>
+        <a href="#area">Stockton</a>
+        <a href="#area">Merced</a>
+      </div>
+      <div class="foot-col foot-phones">
+        <h5>Contact</h5>
+        <a href="tel:+12096692090"><svg style="width:14px;height:14px;color:#8fd0ff;vertical-align:-2px;margin-right:5px"><use href="#i-phone"/></svg> (209) 669-2090</a>
+        <p style="margin-top:8px">2475 Acme Ct<br>Turlock, CA 95380</p>
+        <p>Mon–Sat · 8am–5pm</p>
+      </div>
+    </div>
+    <div class="foot-bar">
+      <span>© <span id="year">2026</span> Premium Plumbing &amp; Drain, Inc. All rights reserved.</span>
+      <span>CSLB #877139 · <a href="#top">Back to top ↑</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================ STICKY MOBILE CALL BAR ============================ -->
+<div class="callbar">
+  <a class="btn btn-red" href="tel:+12096692090"><svg><use href="#i-phone"/></svg> Call Now</a>
+  <a class="btn btn-blue" href="#contact"><svg><use href="#i-cal"/></svg> Book</a>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  /* nav shrink */
+  var nav = document.getElementById('nav');
+  var onScroll = function(){ nav.classList.toggle('shrink', window.scrollY > 14); };
+  onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+
+  /* drawer */
+  var drawer = document.getElementById('drawer'), toggle = document.getElementById('navToggle');
+  var openD = function(){ drawer.classList.add('open'); toggle.classList.add('open'); toggle.setAttribute('aria-expanded','true'); document.body.style.overflow='hidden'; };
+  var closeD = function(){ drawer.classList.remove('open'); toggle.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); document.body.style.overflow=''; };
+  toggle.addEventListener('click', function(){ drawer.classList.contains('open') ? closeD() : openD(); });
+  drawer.querySelectorAll('[data-close]').forEach(function(el){ el.addEventListener('click', closeD); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeD(); });
+
+  /* reveal */
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, {threshold:.12, rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+
+  /* counters */
+  var animateCount = function(el){
+    var target = parseFloat(el.getAttribute('data-count')), dur = 1400, start = null;
+    var step = function(ts){
+      if(!start) start = ts;
+      var p = Math.min((ts - start)/dur, 1), eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(target * eased);
+      if(p < 1) requestAnimationFrame(step); else el.textContent = target;
+    };
+    requestAnimationFrame(step);
+  };
+  var cIO = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ animateCount(e.target); cIO.unobserve(e.target); } });
+  }, {threshold:.6});
+  document.querySelectorAll('[data-count]').forEach(function(el){ cIO.observe(el); });
+
+  /* FAQ accordion (dropdowns) */
+  document.querySelectorAll('.faq-q').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var faq = btn.closest('.faq'), ans = faq.querySelector('.faq-a'), open = faq.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      ans.style.maxHeight = open ? (ans.scrollHeight + 'px') : '0px';
+    });
+  });
+
+  /* forms */
+  var wireForm = function(formId, bodyId, successId){
+    var form = document.getElementById(formId); if(!form) return;
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var name = form.querySelector('[name=name]'), phone = form.querySelector('[name=phone]');
+      if(!name.value.trim() || !phone.value.trim()){ (!name.value.trim() ? name : phone).focus(); return; }
+      // [PH] wire to a real endpoint / email service (Formspree, Netlify, WordPress, etc.)
+      document.getElementById(bodyId).style.display='none';
+      document.getElementById(successId).classList.add('on');
+      form.scrollIntoView({behavior:'smooth', block:'center'});
+    });
+  };
+  wireForm('heroForm','hfBody','hfSuccess');
+  wireForm('contactForm','cfBody','cfSuccess');
+
+  /* year + active nav */
+  var y = document.getElementById('year'); if(y) y.textContent = new Date().getFullYear();
+  var sections = [].slice.call(document.querySelectorAll('section[id]'));
+  var navlinks = [].slice.call(document.querySelectorAll('.nav-links a'));
+  window.addEventListener('scroll', function(){
+    var pos = window.scrollY + 120, cur = '';
+    sections.forEach(function(s){ if(s.offsetTop <= pos) cur = s.id; });
+    navlinks.forEach(function(a){ a.style.color = a.getAttribute('href') === '#'+cur ? 'var(--blue)' : ''; });
+  }, {passive:true});
+})();
+</script>
+</body>
+</html>
