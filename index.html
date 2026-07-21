@@ -6,6 +6,30 @@
 <title>Premium Plumbing &amp; Drain, Inc. — Same-Day Plumbers in Modesto, Turlock &amp; the Central Valley</title>
 <meta name="description" content="Family-owned, 5-star rated plumbers serving Modesto, Turlock, Tracy, Stockton &amp; Merced. Drain cleaning, water heaters, sewer & trenchless, leak detection & more. Same-day service. Licensed, insured & bonded — CSLB #877139. Call (209) 669-2090." />
 <meta name="theme-color" content="#005e9e" />
+<link rel="canonical" href="https://premium-plumbing-production.up.railway.app/" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Plumber",
+  "name": "Premium Plumbing & Drain, Inc.",
+  "url": "https://premium-plumbing-production.up.railway.app/",
+  "telephone": "+12096692090",
+  "foundingDate": "2006",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "2475 Acme Ct",
+    "addressLocality": "Turlock",
+    "addressRegion": "CA",
+    "postalCode": "95380"
+  },
+  "openingHours": "Mo-Sa 08:00-17:00",
+  "areaServed": ["Modesto CA","Turlock CA","Tracy CA","Stockton CA","Merced CA","Ceres CA"],
+  "sameAs": [
+    "https://www.facebook.com/premiumplumbinganddraininc/",
+    "https://instagram.com/premium_plumbing.inc"
+  ]
+}
+</script>
 
 <!--
   ===========================================================================
@@ -27,397 +51,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
-<style>
-/* ============================ TOKENS ============================ */
-:root{
-  --blue:#005e9e;--blue-600:#0a5289;--blue-700:#0a4470;--blue-800:#08375c;
-  --blue-050:#eef5fb;--blue-100:#d9e9f5;--blue-200:#bcd8ee;
-  --red:#bc1e41;--red-600:#a5183a;--red-700:#89142f;
-  --ink:#1b2530;--ink-2:#2b3746;--muted:#5c6b7b;--muted-2:#8090a0;
-  --bg:#ffffff;--panel:#f4f8fb;--panel-2:#eaf2f8;--line:#e3eaf1;--line-2:#d1dde9;
-  --star:#f5a623;
-  --shadow-sm:0 8px 22px -12px rgba(14,45,80,.28);
-  --shadow:0 28px 64px -28px rgba(10,45,80,.4);
-  --radius:16px;--pill:100px;
-  --ease:cubic-bezier(.16,1,.3,1);
-  --wrap:1200px;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{font-family:'Poppins',system-ui,-apple-system,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-img{display:block;max-width:100%}
-a{color:inherit;text-decoration:none}
-button{font-family:inherit;cursor:pointer;border:0;background:none}
-ul{list-style:none}
-::selection{background:var(--blue);color:#fff}
-h1,h2,h3,h4,.dsp{font-family:'Poppins',sans-serif;line-height:1.08;letter-spacing:-.01em}
-h1,h2{font-weight:800}h3,h4{font-weight:700}
-.wrap{width:min(var(--wrap),92vw);margin-inline:auto}
-section{position:relative}
-
-/* ============================ BUTTONS ============================ */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55em;font-family:'Poppins',sans-serif;
-  font-weight:700;font-size:1rem;padding:.92em 1.5em;border-radius:var(--pill);white-space:nowrap;
-  transition:transform .25s var(--ease),box-shadow .25s var(--ease),background .2s;position:relative}
-.btn svg{width:1.15em;height:1.15em}
-.btn-red{color:#fff;background:var(--red);box-shadow:0 14px 26px -12px rgba(188,30,65,.6)}
-.btn-red:hover{background:var(--red-600);transform:translateY(-2px);box-shadow:0 20px 34px -14px rgba(188,30,65,.65)}
-.btn-blue{color:#fff;background:var(--blue);box-shadow:0 14px 26px -12px rgba(0,94,158,.55)}
-.btn-blue:hover{background:var(--blue-600);transform:translateY(-2px)}
-.btn-white{color:var(--blue);background:#fff;box-shadow:var(--shadow-sm)}
-.btn-white:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
-.btn-ghost{color:var(--ink);border:1.5px solid var(--line-2);background:#fff}
-.btn-ghost:hover{border-color:var(--blue);color:var(--blue);transform:translateY(-2px)}
-.btn-outline-white{color:#fff;border:1.5px solid rgba(255,255,255,.5)}
-.btn-outline-white:hover{background:rgba(255,255,255,.12);transform:translateY(-2px)}
-.btn-lg{font-size:1.08rem;padding:1.02em 1.8em}
-
-/* ============================ UTILITY BAR ============================ */
-.utility{background:var(--blue-800);color:#cfe2f2;font-size:.82rem}
-.utility .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:40px;padding:.45rem 0}
-.utility-left{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
-.util-item{display:inline-flex;align-items:center;gap:7px}
-.util-item svg{width:14px;height:14px;color:#7fb2dc;flex:none}
-.util-item b{color:#fff;font-weight:600}
-.utility-right{display:flex;align-items:center;gap:16px}
-.util-phone{display:inline-flex;align-items:center;gap:7px;color:#fff;font-weight:700}
-.util-phone svg{width:14px;height:14px;color:#7fb2dc}
-.util-socials{display:flex;gap:12px}
-.util-socials a{color:#9cc3e2;transition:color .2s}
-.util-socials a:hover{color:#fff}
-.util-socials svg{width:15px;height:15px}
-@media(max-width:860px){.util-item.hide-sm{display:none}.util-socials{display:none}}
-@media(max-width:560px){.utility{display:none}}
-
-/* ============================ NAV ============================ */
-.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(12px) saturate(140%);
-  border-bottom:1px solid var(--line);transition:box-shadow .3s,padding .3s}
-.nav.shrink{box-shadow:0 10px 30px -18px rgba(10,45,80,.35)}
-.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:.7rem 0}
-.brand{display:flex;align-items:center;flex:none}
-.brand img{height:52px;width:auto;transition:height .3s}
-.nav.shrink .brand img{height:46px}
-.nav-links{display:flex;align-items:center;gap:4px}
-.nav-links a{font-family:'Poppins',sans-serif;font-weight:600;font-size:.96rem;color:var(--ink-2);padding:.5em .8em;border-radius:10px;position:relative;transition:color .2s}
-.nav-links a::after{content:"";position:absolute;left:.8em;right:.8em;bottom:.3em;height:2px;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .28s var(--ease);border-radius:2px}
-.nav-links a:hover{color:var(--blue)}
-.nav-links a:hover::after{transform:scaleX(1)}
-.nav-cta{display:flex;align-items:center;gap:14px;flex:none}
-.nav-phone{display:inline-flex;align-items:center;gap:8px;font-family:'Poppins',sans-serif;font-weight:700;font-size:1.08rem;color:var(--blue)}
-.nav-phone svg{width:17px;height:17px}
-.nav-toggle{display:none;width:46px;height:46px;border:1px solid var(--line-2);border-radius:12px;flex-direction:column;gap:5px;align-items:center;justify-content:center}
-.nav-toggle span{width:20px;height:2px;background:var(--ink);border-radius:2px;transition:.3s var(--ease)}
-.nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
-.nav-toggle.open span:nth-child(2){opacity:0}
-.nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-@media(max-width:1080px){.nav-phone span{display:none}}
-@media(max-width:960px){.nav-links,.nav-cta .nav-phone,.nav-cta .btn{display:none}.nav-toggle{display:flex}}
-
-/* nav dropdowns */
-.has-drop{position:relative}
-.drop-toggle{display:inline-flex;align-items:center;gap:5px}
-.drop-toggle .caret{width:13px;height:13px;transition:transform .28s var(--ease);color:var(--muted-2)}
-.has-drop:hover .drop-toggle,.has-drop:focus-within .drop-toggle{color:var(--blue)}
-.has-drop:hover .drop-toggle .caret,.has-drop:focus-within .drop-toggle .caret{transform:rotate(180deg);color:var(--blue)}
-.drop-menu{position:absolute;top:100%;left:0;margin-top:12px;background:#fff;border:1px solid var(--line);border-radius:16px;
-  box-shadow:var(--shadow);padding:14px;z-index:60;opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .22s var(--ease),transform .22s var(--ease),visibility .22s}
-.drop-menu::before{content:"";position:absolute;top:-14px;left:0;right:0;height:14px}
-.has-drop:hover .drop-menu,.has-drop:focus-within .drop-menu{opacity:1;visibility:visible;transform:none}
-.drop-services{width:540px;display:grid;grid-template-columns:1fr 1fr;gap:4px}
-.drop-item{display:flex;gap:12px;padding:11px;border-radius:12px;transition:background .2s}
-.drop-item:hover{background:var(--blue-050)}
-.drop-item .di-ico{width:40px;height:40px;flex:none;border-radius:11px;display:grid;place-items:center;background:var(--blue-050);color:var(--blue);transition:.25s}
-.drop-item:hover .di-ico{background:var(--blue);color:#fff}
-.drop-item .di-ico svg{width:21px;height:21px}
-.drop-item b{display:block;font-family:'Poppins';font-weight:600;font-size:.92rem;color:var(--ink);line-height:1.2}
-.drop-item span{font-size:.77rem;color:var(--muted);line-height:1.3}
-.drop-foot{grid-column:1/-1;margin-top:6px;padding:13px 11px 5px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:12px}
-.drop-foot .df-all{font-family:'Poppins';font-weight:600;font-size:.88rem;color:var(--blue);display:inline-flex;align-items:center;gap:6px}
-.drop-foot .df-all svg{width:15px;height:15px;transition:transform .25s}
-.drop-foot .df-all:hover svg{transform:translateX(3px)}
-.drop-foot .df-call{font-family:'Poppins';font-weight:700;font-size:.9rem;color:var(--red);display:inline-flex;align-items:center;gap:6px}
-.drop-foot .df-call svg{width:15px;height:15px}
-.drop-area{width:250px;display:flex;flex-direction:column;gap:2px}
-.drop-area a{display:flex;align-items:center;gap:11px;padding:10px 12px;border-radius:11px;font-family:'Poppins';font-weight:500;font-size:.93rem;color:var(--ink-2);transition:.2s}
-.drop-area a:hover{background:var(--blue-050);color:var(--blue)}
-.drop-area a svg{width:16px;height:16px;color:var(--red)}
-.drop-area .da-head{font-family:'Poppins';font-weight:700;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);padding:6px 12px 8px}
-
-/* mobile drawer sub-links */
-.drawer .dsub{display:flex;flex-direction:column;padding:2px 0 8px 14px}
-.drawer .dsub a{font-family:'Poppins';font-weight:500;font-size:.98rem;color:var(--muted);padding:.5em 0}
-.drawer .dsub a:hover{color:var(--blue)}
-
-/* drawer */
-.drawer{position:fixed;inset:0;z-index:70;pointer-events:none}
-.drawer-scrim{position:absolute;inset:0;background:rgba(10,30,55,.5);opacity:0;transition:opacity .35s}
-.drawer-panel{position:absolute;top:0;right:0;height:100%;width:min(350px,86vw);background:#fff;box-shadow:-30px 0 80px rgba(10,40,75,.25);
-  transform:translateX(100%);transition:transform .4s var(--ease);display:flex;flex-direction:column;padding:22px 22px;gap:4px}
-.drawer.open{pointer-events:auto}
-.drawer.open .drawer-scrim{opacity:1}
-.drawer.open .drawer-panel{transform:none}
-.drawer .dh{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
-.drawer .dh img{height:44px}
-.drawer-close{width:42px;height:42px;border:1px solid var(--line-2);border-radius:11px;font-size:1.5rem;color:var(--ink);display:grid;place-items:center}
-.drawer a.dl{font-family:'Poppins',sans-serif;font-weight:600;font-size:1.15rem;color:var(--ink);padding:.7em .2em;border-bottom:1px solid var(--line)}
-.drawer-foot{margin-top:auto;display:flex;flex-direction:column;gap:10px;padding-top:14px}
-
-/* ============================ HERO ============================ */
-.hero{position:relative;overflow:hidden;color:#fff;
-  background:radial-gradient(120% 120% at 85% 0%,#0a6aad 0%,var(--blue) 42%,var(--blue-700) 100%)}
-.hero-pattern{position:absolute;inset:0;opacity:.5;pointer-events:none;
-  background-image:radial-gradient(rgba(255,255,255,.14) 1.4px,transparent 1.5px);background-size:26px 26px;
-  mask-image:linear-gradient(180deg,#000,transparent 75%)}
-.hero-photo{position:absolute;right:0;top:0;bottom:0;width:46%;z-index:0;overflow:hidden}
-.hero-photo img{width:100%;height:100%;object-fit:cover;opacity:.22}
-.hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--blue-700),transparent 60%)}
-@media(max-width:900px){.hero-photo{display:none}}
-.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center;
-  padding:clamp(40px,6vw,74px) 0}
-@media(max-width:900px){.hero .wrap{grid-template-columns:1fr;gap:30px}}
-
-.hero-eyebrow{display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);
-  border-radius:var(--pill);padding:.45em 1em;font-family:'Poppins',sans-serif;font-weight:600;font-size:.82rem;letter-spacing:.01em;margin-bottom:20px}
-.hero-eyebrow .stars{display:inline-flex;gap:2px}
-.hero-eyebrow .stars svg{width:14px;height:14px;color:var(--star)}
-.hero h1{font-size:clamp(2.4rem,5.2vw,3.9rem);margin-bottom:.34em}
-.hero h1 .hl{color:#ffd7df;position:relative;white-space:nowrap}
-.hero-sub{font-size:clamp(1.04rem,1.4vw,1.2rem);color:#dbeaf7;max-width:34em;margin-bottom:26px}
-.hero-cta{display:flex;gap:13px;flex-wrap:wrap;margin-bottom:26px}
-.hero-badges{display:flex;gap:20px;flex-wrap:wrap}
-.hero-badge{display:inline-flex;align-items:center;gap:9px;font-size:.9rem;color:#eaf3fb}
-.hero-badge svg{width:20px;height:20px;color:#8fd0ff;flex:none}
-.hero-badge b{color:#fff;font-weight:700}
-
-/* hero form card */
-.hero-card{background:#fff;color:var(--ink);border-radius:20px;padding:26px 24px;box-shadow:var(--shadow);position:relative}
-.hero-card .hc-tab{position:absolute;top:-14px;left:24px;background:var(--red);color:#fff;font-family:'Poppins';font-weight:700;
-  font-size:.78rem;letter-spacing:.02em;padding:.4em .9em;border-radius:var(--pill);box-shadow:0 10px 20px -8px rgba(188,30,65,.5)}
-.hero-card h3{font-size:1.42rem;margin:6px 0 3px}
-.hero-card .hc-sub{color:var(--muted);font-size:.92rem;margin-bottom:16px}
-.field{margin-bottom:11px}
-.field label{display:block;font-family:'Poppins';font-weight:600;font-size:.78rem;color:var(--ink-2);margin-bottom:5px}
-.field input,.field select,.field textarea{width:100%;padding:.82em .95em;border-radius:12px;border:1.5px solid var(--line-2);
-  background:#fff;color:var(--ink);font-family:inherit;font-size:.96rem;transition:.2s}
-.field input::placeholder,.field textarea::placeholder{color:var(--muted-2)}
-.field input:focus,.field select:focus,.field textarea:focus{outline:0;border-color:var(--blue);box-shadow:0 0 0 4px rgba(0,94,158,.12)}
-.field textarea{resize:vertical;min-height:96px}
-.frow{display:grid;grid-template-columns:1fr 1fr;gap:11px}
-@media(max-width:520px){.frow{grid-template-columns:1fr}}
-.hero-card .btn{width:100%;margin-top:5px}
-.hc-foot{text-align:center;color:var(--muted-2);font-size:.8rem;margin-top:11px}
-.hc-foot a{color:var(--blue);font-weight:600}
-.form-success{display:none;text-align:center;padding:26px 6px}
-.form-success.on{display:block}
-.fs-ico{width:64px;height:64px;border-radius:50%;background:#e8f6ee;display:grid;place-items:center;margin:0 auto 14px}
-.fs-ico svg{width:32px;height:32px;color:#1f9d55}
-.form-success h3{margin-bottom:6px}
-.form-success p{color:var(--muted);font-size:.94rem}
-
-/* ============================ TRUST STRIP ============================ */
-.trust{background:#fff;border-bottom:1px solid var(--line)}
-.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:22px 0}
-@media(max-width:760px){.trust .wrap{grid-template-columns:repeat(2,1fr);gap:20px}}
-.trust-item{display:flex;align-items:center;gap:12px;justify-content:center;text-align:left}
-.trust-item .ti-ico{width:44px;height:44px;flex:none;border-radius:12px;display:grid;place-items:center;background:var(--blue-050);color:var(--blue)}
-.trust-item .ti-ico svg{width:23px;height:23px}
-.trust-item b{display:block;font-family:'Poppins';font-weight:700;font-size:1.02rem;line-height:1.1}
-.trust-item span{color:var(--muted);font-size:.84rem}
-
-/* ============================ SECTION SHELL ============================ */
-.sec{padding:clamp(58px,8vw,104px) 0}
-.sec.tint{background:var(--panel)}
-.sec.blue-tint{background:linear-gradient(180deg,var(--blue-050),#fff)}
-.sec-head{max-width:720px;margin-bottom:48px}
-.sec-head.center{margin-inline:auto;text-align:center}
-.kicker{display:inline-flex;align-items:center;gap:8px;font-family:'Poppins';font-weight:700;text-transform:uppercase;
-  letter-spacing:.12em;font-size:.78rem;color:var(--red);margin-bottom:14px}
-.kicker::before{content:"";width:22px;height:2px;background:var(--red);border-radius:2px}
-.sec-head.center .kicker{justify-content:center}
-.sec-head h2{font-size:clamp(1.9rem,4vw,2.9rem);margin-bottom:.35em;color:var(--ink)}
-.sec-head p{color:var(--muted);font-size:1.06rem}
-.text-blue{color:var(--blue)}
-.text-red{color:var(--red)}
-
-/* ============================ SERVICES ============================ */
-.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-@media(max-width:940px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:600px){.svc-grid{grid-template-columns:1fr}}
-.svc{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px 26px;position:relative;overflow:hidden;
-  transition:transform .35s var(--ease),box-shadow .35s var(--ease),border-color .35s}
-.svc::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--blue);transform:scaleY(0);transform-origin:top;transition:transform .35s var(--ease)}
-.svc:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:transparent}
-.svc:hover::before{transform:scaleY(1)}
-.svc-ico{width:56px;height:56px;border-radius:14px;display:grid;place-items:center;margin-bottom:18px;
-  background:linear-gradient(150deg,var(--blue),var(--blue-700));color:#fff;box-shadow:0 12px 22px -10px rgba(0,94,158,.6)}
-.svc-ico svg{width:28px;height:28px}
-.svc:nth-child(3n+2) .svc-ico{background:linear-gradient(150deg,var(--red),var(--red-700));box-shadow:0 12px 22px -10px rgba(188,30,65,.55)}
-.svc h3{font-size:1.32rem;margin-bottom:.45em}
-.svc p{color:var(--muted);font-size:.95rem;margin-bottom:15px}
-.svc-list{display:flex;flex-wrap:wrap;gap:7px}
-.svc-list span{display:inline-flex;align-items:center;gap:5px;font-size:.8rem;font-weight:600;color:var(--blue);background:var(--blue-050);border-radius:var(--pill);padding:.35em .75em}
-.svc-list span svg{width:12px;height:12px}
-
-/* ============================ WHY / VALUE ============================ */
-.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
-@media(max-width:940px){.why-grid{grid-template-columns:1fr;gap:34px}}
-.why-media{position:relative}
-.why-media .wm-main{border-radius:20px;overflow:hidden;box-shadow:var(--shadow);border:6px solid #fff}
-.why-media .wm-main img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
-.why-media .wm-badge{position:absolute;right:-14px;bottom:-18px;background:#fff;border-radius:16px;padding:16px 20px;
-  box-shadow:var(--shadow);display:flex;align-items:center;gap:13px;border:1px solid var(--line)}
-.wm-badge .wb-star{width:48px;height:48px;border-radius:12px;background:#fff6e6;display:grid;place-items:center;flex:none}
-.wm-badge .wb-star svg{width:26px;height:26px;color:var(--star)}
-.wm-badge b{font-family:'Poppins';font-weight:800;font-size:1.3rem;display:block;line-height:1}
-.wm-badge .wb-stars{display:flex;gap:1px;margin:3px 0}
-.wm-badge .wb-stars svg{width:12px;height:12px;color:var(--star)}
-.wm-badge span{color:var(--muted);font-size:.78rem}
-.why-list{display:flex;flex-direction:column;gap:8px;margin-top:22px}
-.why-item{display:flex;gap:15px;padding:15px;border-radius:14px;transition:.3s var(--ease)}
-.why-item:hover{background:var(--blue-050)}
-.why-item .wi-ico{width:46px;height:46px;flex:none;border-radius:12px;display:grid;place-items:center;background:var(--red);color:#fff;box-shadow:0 10px 20px -10px rgba(188,30,65,.55)}
-.why-item .wi-ico svg{width:23px;height:23px}
-.why-item h4{font-size:1.14rem;margin-bottom:2px}
-.why-item p{color:var(--muted);font-size:.93rem}
-
-/* ============================ STATS ============================ */
-.stats{background:linear-gradient(150deg,var(--blue),var(--blue-700));color:#fff;position:relative;overflow:hidden}
-.stats .hero-pattern{opacity:.4;mask-image:none}
-.stats .wrap{position:relative;z-index:2;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:clamp(42px,6vw,66px) 0}
-@media(max-width:760px){.stats .wrap{grid-template-columns:repeat(2,1fr);gap:32px 20px}}
-.stat{text-align:center;position:relative}
-.stat:not(:last-child)::after{content:"";position:absolute;right:0;top:15%;bottom:15%;width:1px;background:rgba(255,255,255,.18)}
-@media(max-width:760px){.stat:nth-child(2)::after{display:none}}
-.stat .num{font-family:'Poppins';font-weight:800;font-size:clamp(2.4rem,5vw,3.3rem);line-height:1}
-.stat .num .suf{color:#8fd0ff}
-.stat .lbl{color:#cfe4f5;font-size:.95rem;margin-top:6px;font-weight:500}
-
-/* ============================ PROCESS ============================ */
-.proc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-@media(max-width:880px){.proc-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:480px){.proc-grid{grid-template-columns:1fr}}
-.proc{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px 24px;position:relative;transition:.35s var(--ease)}
-.proc:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
-.proc .pn{font-family:'Poppins';font-weight:800;font-size:1.15rem;width:50px;height:50px;border-radius:14px;display:grid;place-items:center;
-  background:var(--blue-050);color:var(--blue);margin-bottom:16px}
-.proc:hover .pn{background:var(--blue);color:#fff}
-.proc h4{font-size:1.22rem;margin-bottom:.4em}
-.proc p{color:var(--muted);font-size:.93rem}
-.proc .parrow{position:absolute;top:44px;right:-12px;width:24px;height:24px;color:var(--line-2);z-index:2}
-@media(max-width:880px){.proc .parrow{display:none}}
-
-/* ============================ SERVICE AREA ============================ */
-.area-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:46px;align-items:center}
-@media(max-width:940px){.area-grid{grid-template-columns:1fr;gap:32px}}
-.area-cities{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
-.area-cities a{display:inline-flex;align-items:center;gap:7px;font-family:'Poppins';font-weight:600;font-size:.96rem;color:var(--ink-2);
-  border:1.5px solid var(--line-2);border-radius:var(--pill);padding:.5em 1.05em;transition:.25s}
-.area-cities a svg{width:14px;height:14px;color:var(--red)}
-.area-cities a:hover{border-color:var(--blue);color:var(--blue);background:var(--blue-050);transform:translateY(-2px)}
-.area-map{position:relative;border-radius:20px;overflow:hidden;box-shadow:var(--shadow);border:6px solid #fff;min-height:380px;background:var(--panel)}
-.area-map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
-.area-map .mchip{position:absolute;left:16px;bottom:16px;z-index:2;pointer-events:none;display:inline-flex;align-items:center;gap:8px;
-  background:#fff;border-radius:var(--pill);padding:.55em 1.05em;font-family:'Poppins';font-weight:700;font-size:.84rem;color:var(--blue);box-shadow:var(--shadow-sm)}
-.area-map .mchip svg{width:15px;height:15px;color:var(--red)}
-
-/* ============================ REVIEWS ============================ */
-.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-@media(max-width:900px){.rev-grid{grid-template-columns:1fr}}
-.rev{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px;box-shadow:var(--shadow-sm)}
-.rev .stars{display:flex;gap:2px;margin-bottom:12px}
-.rev .stars svg{width:17px;height:17px;color:var(--star)}
-.rev p{color:var(--ink-2);font-size:1rem;margin-bottom:18px}
-.rev .who{display:flex;align-items:center;gap:12px}
-.rev .av{width:44px;height:44px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font-family:'Poppins';font-weight:700}
-.rev .who b{display:block;font-family:'Poppins';font-weight:700;font-size:1rem}
-.rev .who span{color:var(--muted);font-size:.83rem;display:inline-flex;align-items:center;gap:5px}
-.rev .who span svg{width:13px;height:13px;color:#4285F4}
-
-/* ============================ GALLERY (BENTO) ============================ */
-.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:210px;gap:14px}
-@media(max-width:900px){.gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:160px}}
-.gtile{position:relative;border-radius:16px;overflow:hidden;box-shadow:var(--shadow-sm);border:1px solid var(--line);display:flex;align-items:flex-end;padding:16px}
-.gtile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;transition:transform .6s var(--ease)}
-.gtile::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,transparent 45%,rgba(8,40,70,.82))}
-.gtile:hover img{transform:scale(1.07)}
-.gtile .gcap{position:relative;z-index:2;color:#fff}
-.gtile .gcap .gc-k{font-family:'Poppins';font-weight:700;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:#9fd3ff}
-.gtile .gcap b{font-family:'Poppins';font-weight:700;font-size:1.08rem}
-.g-2x2{grid-column:span 2;grid-row:span 2}.g-2w{grid-column:span 2}
-@media(max-width:900px){.g-2x2{grid-column:span 2;grid-row:span 2}.g-2w{grid-column:span 2}}
-
-/* ============================ FAQ (DROPDOWNS) ============================ */
-.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 30px;align-items:start}
-@media(max-width:820px){.faq-grid{grid-template-columns:1fr}}
-.faq{border:1px solid var(--line);border-radius:14px;background:#fff;overflow:hidden;transition:box-shadow .3s,border-color .3s}
-.faq.open{box-shadow:var(--shadow-sm);border-color:var(--blue-200)}
-.faq-q{width:100%;display:flex;align-items:center;justify-content:space-between;gap:14px;text-align:left;
-  font-family:'Poppins';font-weight:600;font-size:1.04rem;color:var(--ink);padding:18px 20px}
-.faq-q .fic{width:30px;height:30px;flex:none;border-radius:9px;background:var(--blue-050);color:var(--blue);display:grid;place-items:center;transition:.35s var(--ease)}
-.faq-q .fic svg{width:18px;height:18px}
-.faq.open .faq-q .fic{background:var(--blue);color:#fff;transform:rotate(180deg)}
-.faq-a{max-height:0;overflow:hidden;transition:max-height .4s var(--ease)}
-.faq-a p{color:var(--muted);font-size:.96rem;padding:0 20px 18px 20px}
-
-/* ============================ CTA BAND ============================ */
-.ctaband{background:linear-gradient(135deg,var(--red) 0%,var(--red-700) 100%);color:#fff;position:relative;overflow:hidden}
-.ctaband .hero-pattern{opacity:.35;mask-image:none}
-.ctaband .wrap{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap;padding:clamp(46px,6vw,72px) 0}
-.ctaband h2{font-size:clamp(1.8rem,3.8vw,2.7rem);margin-bottom:.3em}
-.ctaband p{color:#ffdfe6;font-size:1.08rem;max-width:32em}
-.ctaband-actions{display:flex;gap:13px;flex-wrap:wrap}
-
-/* ============================ CONTACT ============================ */
-.contact-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:46px;align-items:start}
-@media(max-width:940px){.contact-grid{grid-template-columns:1fr;gap:34px}}
-.cc-list{display:flex;flex-direction:column;gap:13px;margin-top:24px}
-.cc{display:flex;gap:15px;padding:18px;border-radius:14px;border:1px solid var(--line);background:#fff;transition:.3s}
-.cc:hover{border-color:var(--blue-200);box-shadow:var(--shadow-sm)}
-.cc .cc-ico{width:46px;height:46px;flex:none;border-radius:12px;display:grid;place-items:center;background:var(--blue-050);color:var(--blue)}
-.cc .cc-ico svg{width:23px;height:23px}
-.cc .cc-l{font-family:'Poppins';font-weight:600;font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
-.cc .cc-v{font-family:'Poppins';font-weight:700;font-size:1.16rem;color:var(--ink)}
-.cc .cc-v a:hover{color:var(--blue)}
-.cc .cc-s{color:var(--muted);font-size:.86rem}
-.form-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:30px;box-shadow:var(--shadow)}
-.form-card h3{font-size:1.5rem;margin-bottom:5px}
-.form-card .fc-sub{color:var(--muted);font-size:.94rem;margin-bottom:20px}
-.form-card .btn{width:100%;margin-top:6px}
-
-/* ============================ FOOTER ============================ */
-.footer{background:var(--blue-800);color:#bcd4e8;padding:60px 0 0}
-.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:38px;padding-bottom:44px}
-@media(max-width:900px){.foot-grid{grid-template-columns:1fr 1fr;gap:32px}}
-@media(max-width:520px){.foot-grid{grid-template-columns:1fr}}
-.foot-logo{background:#fff;border-radius:14px;padding:12px 16px;display:inline-block;margin-bottom:16px}
-.foot-logo img{height:52px;width:auto}
-.foot-about{font-size:.93rem;line-height:1.7;max-width:32ch;margin-bottom:16px}
-.foot-lic{display:inline-flex;align-items:center;gap:8px;font-family:'Poppins';font-weight:600;font-size:.85rem;color:#fff;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:.5em .85em}
-.foot-lic svg{width:15px;height:15px;color:#8fd0ff}
-.foot-col h5{font-family:'Poppins';font-weight:700;font-size:.95rem;color:#fff;margin-bottom:15px}
-.foot-col a,.foot-col p{display:block;color:#bcd4e8;font-size:.93rem;padding:.3em 0;transition:color .2s}
-.foot-col a:hover{color:#fff}
-.foot-phones a{font-family:'Poppins';font-weight:700;font-size:1.15rem;color:#fff}
-.foot-socials{display:flex;gap:10px;margin-top:14px}
-.foot-socials a{width:40px;height:40px;border-radius:11px;background:rgba(255,255,255,.09);display:grid;place-items:center;color:#cfe2f2;transition:.3s}
-.foot-socials a:hover{background:#fff;color:var(--blue);transform:translateY(-3px)}
-.foot-socials svg{width:18px;height:18px}
-.foot-bar{border-top:1px solid rgba(255,255,255,.12);padding:20px 0;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:.84rem;color:#9cbdd7}
-.foot-bar a{color:#9cbdd7}.foot-bar a:hover{color:#fff}
-
-/* ============================ STICKY MOBILE CALL BAR ============================ */
-.callbar{position:fixed;left:0;right:0;bottom:0;z-index:65;display:none;gap:10px;padding:10px 12px;background:#fff;border-top:1px solid var(--line);box-shadow:0 -10px 30px -18px rgba(10,40,75,.4)}
-.callbar .btn{flex:1;padding:.85em 1em;font-size:.98rem}
-@media(max-width:560px){.callbar{display:flex}body{padding-bottom:70px}}
-
-/* ============================ REVEAL ============================ */
-.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
-.reveal.in{opacity:1;transform:none}
-.reveal[data-d="1"]{transition-delay:.08s}.reveal[data-d="2"]{transition-delay:.16s}
-.reveal[data-d="3"]{transition-delay:.24s}.reveal[data-d="4"]{transition-delay:.32s}
-.reveal[data-d="5"]{transition-delay:.4s}
-@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}*{animation:none!important}}
-</style>
+<link rel="stylesheet" href="/css/site.css" />
 </head>
 <body>
 
@@ -479,37 +113,38 @@ section{position:relative}
     </a>
     <nav class="nav-links">
       <div class="has-drop">
-        <a href="#services" class="drop-toggle">Services <svg class="caret"><use href="#i-chevron"/></svg></a>
+        <a href="/services.html" class="drop-toggle">Services <svg class="caret"><use href="#i-chevron"/></svg></a>
         <div class="drop-menu drop-services">
-          <a class="drop-item" href="#services"><span class="di-ico"><svg><use href="#i-home"/></svg></span><span><b>Residential Plumbing</b><span>Repairs &amp; installs for your home</span></span></a>
-          <a class="drop-item" href="#services"><span class="di-ico"><svg><use href="#i-building"/></svg></span><span><b>Commercial Plumbing</b><span>Service for your business</span></span></a>
-          <a class="drop-item" href="#services"><span class="di-ico"><svg><use href="#i-drain"/></svg></span><span><b>Sewer &amp; Drain Cleaning</b><span>Clogs cleared, drains flowing</span></span></a>
-          <a class="drop-item" href="#services"><span class="di-ico"><svg><use href="#i-drop"/></svg></span><span><b>Hydro Jetting</b><span>High-pressure line cleaning</span></span></a>
-          <a class="drop-item" href="#services"><span class="di-ico"><svg><use href="#i-heater"/></svg></span><span><b>Water Heaters</b><span>Repair &amp; replacement</span></span></a>
-          <a class="drop-item" href="#services"><span class="di-ico"><svg><use href="#i-wrench"/></svg></span><span><b>Water Pipe Repair</b><span>Leaks, repipes &amp; slab leaks</span></span></a>
-          <a class="drop-item" href="#services"><span class="di-ico"><svg><use href="#i-key"/></svg></span><span><b>Property Management</b><span>Reliable service for your units</span></span></a>
-          <a class="drop-item" href="#contact"><span class="di-ico"><svg><use href="#i-bolt"/></svg></span><span><b>Same-Day / Emergency</b><span>Fast response when it counts</span></span></a>
+          <a class="drop-item" href="/services/drain-cleaning.html"><span class="di-ico"><svg><use href="#i-drain"/></svg></span><span><b>Drain Cleaning</b><span>Clogs cleared, drains flowing</span></span></a>
+          <a class="drop-item" href="/services/hydro-jetting.html"><span class="di-ico"><svg><use href="#i-drop"/></svg></span><span><b>Hydro Jetting</b><span>High-pressure line cleaning</span></span></a>
+          <a class="drop-item" href="/services/water-heaters.html"><span class="di-ico"><svg><use href="#i-heater"/></svg></span><span><b>Water Heaters</b><span>Repair &amp; replacement</span></span></a>
+          <a class="drop-item" href="/services/sewer-trenchless.html"><span class="di-ico"><svg><use href="#i-sewer"/></svg></span><span><b>Sewer &amp; Trenchless</b><span>Camera inspection &amp; repair</span></span></a>
+          <a class="drop-item" href="/services/leak-detection.html"><span class="di-ico"><svg><use href="#i-leak"/></svg></span><span><b>Leak Detection</b><span>Slab leaks &amp; hidden leaks</span></span></a>
+          <a class="drop-item" href="/services/fixtures-repairs.html"><span class="di-ico"><svg><use href="#i-wrench"/></svg></span><span><b>Fixtures &amp; Repairs</b><span>Faucets, toilets &amp; water lines</span></span></a>
+          <a class="drop-item" href="/services/gas-lines.html"><span class="di-ico"><svg><use href="#i-flame"/></svg></span><span><b>Gas Lines</b><span>Safe installs &amp; repairs</span></span></a>
+          <a class="drop-item" href="/services/commercial.html"><span class="di-ico"><svg><use href="#i-building"/></svg></span><span><b>Commercial &amp; Property Mgmt</b><span>Service for your business</span></span></a>
           <div class="drop-foot">
-            <a class="df-all" href="#services">View all services <svg><use href="#i-arrow"/></svg></a>
+            <a class="df-all" href="/services.html">View all services <svg><use href="#i-arrow"/></svg></a>
             <a class="df-call" href="tel:+12096692090"><svg><use href="#i-phone"/></svg> (209) 669-2090</a>
           </div>
         </div>
       </div>
       <a href="#why">Why Us</a>
       <div class="has-drop">
-        <a href="#area" class="drop-toggle">Service Area <svg class="caret"><use href="#i-chevron"/></svg></a>
+        <a href="/service-areas.html" class="drop-toggle">Service Area <svg class="caret"><use href="#i-chevron"/></svg></a>
         <div class="drop-menu drop-area">
           <div class="da-head">Central Valley, CA</div>
-          <a href="#area"><svg><use href="#i-pin"/></svg> Modesto</a>
-          <a href="#area"><svg><use href="#i-pin"/></svg> Turlock</a>
-          <a href="#area"><svg><use href="#i-pin"/></svg> Tracy</a>
-          <a href="#area"><svg><use href="#i-pin"/></svg> Stockton</a>
-          <a href="#area"><svg><use href="#i-pin"/></svg> Merced</a>
-          <a href="#area" style="color:var(--blue);font-weight:600"><svg><use href="#i-arrow"/></svg> See all areas</a>
+          <a href="/service-areas/modesto.html"><svg><use href="#i-pin"/></svg> Modesto</a>
+          <a href="/service-areas/turlock.html"><svg><use href="#i-pin"/></svg> Turlock</a>
+          <a href="/service-areas/tracy.html"><svg><use href="#i-pin"/></svg> Tracy</a>
+          <a href="/service-areas/stockton.html"><svg><use href="#i-pin"/></svg> Stockton</a>
+          <a href="/service-areas/merced.html"><svg><use href="#i-pin"/></svg> Merced</a>
+          <a href="/service-areas/ceres.html"><svg><use href="#i-pin"/></svg> Ceres</a>
+          <a href="/service-areas.html" style="color:var(--blue);font-weight:600"><svg><use href="#i-arrow"/></svg> See all areas</a>
         </div>
       </div>
-      <a href="#reviews">Reviews</a>
-      <a href="#photos">Photos</a>
+      <a href="/about.html">About</a>
+      <a href="/reviews.html">Reviews</a>
       <a href="#faq">FAQ</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -526,20 +161,20 @@ section{position:relative}
   <div class="drawer-scrim" data-close></div>
   <div class="drawer-panel">
     <div class="dh"><img src="logo.png" alt="Premium Plumbing & Drain, Inc."><button class="drawer-close" data-close aria-label="Close">&times;</button></div>
-    <a class="dl" href="#services" data-close>Services</a>
+    <a class="dl" href="/services.html" data-close>Services</a>
     <div class="dsub">
-      <a href="#services" data-close>Residential Plumbing</a>
-      <a href="#services" data-close>Commercial Plumbing</a>
-      <a href="#services" data-close>Sewer &amp; Drain Cleaning</a>
-      <a href="#services" data-close>Hydro Jetting</a>
-      <a href="#services" data-close>Water Heaters</a>
-      <a href="#services" data-close>Water Pipe Repair</a>
-      <a href="#services" data-close>Property Management</a>
+      <a href="/services/drain-cleaning.html" data-close>Drain Cleaning</a>
+      <a href="/services/hydro-jetting.html" data-close>Hydro Jetting</a>
+      <a href="/services/water-heaters.html" data-close>Water Heaters</a>
+      <a href="/services/sewer-trenchless.html" data-close>Sewer &amp; Trenchless</a>
+      <a href="/services/leak-detection.html" data-close>Leak Detection</a>
+      <a href="/services/fixtures-repairs.html" data-close>Fixtures &amp; Repairs</a>
+      <a href="/services/gas-lines.html" data-close>Gas Lines</a>
+      <a href="/services/commercial.html" data-close>Commercial</a>
     </div>
-    <a class="dl" href="#why" data-close>Why Us</a>
-    <a class="dl" href="#area" data-close>Service Area</a>
-    <a class="dl" href="#reviews" data-close>Reviews</a>
-    <a class="dl" href="#photos" data-close>Photos</a>
+    <a class="dl" href="/service-areas.html" data-close>Service Area</a>
+    <a class="dl" href="/about.html" data-close>About</a>
+    <a class="dl" href="/reviews.html" data-close>Reviews</a>
     <a class="dl" href="#faq" data-close>FAQ</a>
     <a class="dl" href="#contact" data-close>Contact</a>
     <div class="drawer-foot">
@@ -632,37 +267,37 @@ section{position:relative}
     <div class="svc-grid">
       <article class="svc reveal">
         <div class="svc-ico"><svg><use href="#i-drain"/></svg></div>
-        <h3>Drain Cleaning &amp; Hydro Jetting</h3>
+        <h3><a href="/services/drain-cleaning.html">Drain Cleaning &amp; Hydro Jetting</a></h3>
         <p>Fast, thorough clearing of stubborn clogs — plus high-pressure hydro jetting that scours lines clean and keeps them flowing.</p>
         <div class="svc-list"><span><svg><use href="#i-check"/></svg>Drain Cleaning</span><span><svg><use href="#i-check"/></svg>Hydro Jetting</span><span><svg><use href="#i-check"/></svg>Drain Line Repair</span></div>
       </article>
       <article class="svc reveal" data-d="1">
         <div class="svc-ico"><svg><use href="#i-heater"/></svg></div>
-        <h3>Water Heaters</h3>
+        <h3><a href="/services/water-heaters.html">Water Heaters</a></h3>
         <p>Repairs, replacements and upgrades for tank &amp; tankless units — restoring hot water fast with dependable, code-compliant installs.</p>
         <div class="svc-list"><span><svg><use href="#i-check"/></svg>Repair</span><span><svg><use href="#i-check"/></svg>Replacement</span><span><svg><use href="#i-check"/></svg>Tankless</span></div>
       </article>
       <article class="svc reveal" data-d="2">
         <div class="svc-ico"><svg><use href="#i-sewer"/></svg></div>
-        <h3>Sewer &amp; Trenchless</h3>
+        <h3><a href="/services/sewer-trenchless.html">Sewer &amp; Trenchless</a></h3>
         <p>Sewer line repair, camera inspection and trenchless sewer replacement — fixing the problem underground without tearing up your yard.</p>
         <div class="svc-list"><span><svg><use href="#i-check"/></svg>Sewer Lines</span><span><svg><use href="#i-check"/></svg>Trenchless</span><span><svg><use href="#i-check"/></svg>Camera Inspection</span></div>
       </article>
       <article class="svc reveal">
         <div class="svc-ico"><svg><use href="#i-leak"/></svg></div>
-        <h3>Leak Detection &amp; Slab Leaks</h3>
+        <h3><a href="/services/leak-detection.html">Leak Detection &amp; Slab Leaks</a></h3>
         <p>Advanced leak detection to pinpoint hidden leaks — including slab leak repair — before they damage your floors, walls or foundation.</p>
         <div class="svc-list"><span><svg><use href="#i-check"/></svg>Leak Detection</span><span><svg><use href="#i-check"/></svg>Slab Leaks</span><span><svg><use href="#i-check"/></svg>Pipe Repair</span></div>
       </article>
       <article class="svc reveal" data-d="1">
         <div class="svc-ico"><svg><use href="#i-wrench"/></svg></div>
-        <h3>Fixtures &amp; Repairs</h3>
+        <h3><a href="/services/fixtures-repairs.html">Fixtures &amp; Repairs</a></h3>
         <p>Faucets, toilets, water lines and everyday plumbing repairs — installed and serviced cleanly, so everything works the way it should.</p>
         <div class="svc-list"><span><svg><use href="#i-check"/></svg>Faucets</span><span><svg><use href="#i-check"/></svg>Toilets</span><span><svg><use href="#i-check"/></svg>Water Lines</span></div>
       </article>
       <article class="svc reveal" data-d="2">
         <div class="svc-ico"><svg><use href="#i-flame"/></svg></div>
-        <h3>Gas Lines &amp; Maintenance</h3>
+        <h3><a href="/services/gas-lines.html">Gas Lines &amp; Maintenance</a></h3>
         <p>Safe gas line installation and repair, plus preventative maintenance plans that catch small issues before they become big ones.</p>
         <div class="svc-list"><span><svg><use href="#i-check"/></svg>Gas Lines</span><span><svg><use href="#i-check"/></svg>Maintenance</span><span><svg><use href="#i-check"/></svg>Inspections</span></div>
       </article>
@@ -706,7 +341,7 @@ section{position:relative}
   <div class="wrap">
     <div class="stat reveal"><div class="num"><span data-count="5">0</span><span class="suf">★</span></div><div class="lbl">Google Rating</div></div>
     <div class="stat reveal" data-d="1"><div class="num"><span class="suf" style="font-size:.5em;color:#8fd0ff">Since</span> <span data-count="2006">0</span></div><div class="lbl">Serving the Valley</div></div>
-    <div class="stat reveal" data-d="2"><div class="num"><span data-count="5">0</span></div><div class="lbl">Cities Served</div></div>
+    <div class="stat reveal" data-d="2"><div class="num"><span data-count="6">0</span></div><div class="lbl">Cities Served</div></div>
     <div class="stat reveal" data-d="3"><div class="num"><span data-count="100">0</span><span class="suf">%</span></div><div class="lbl">Satisfaction Guaranteed</div></div>
   </div>
 </section>
@@ -738,12 +373,13 @@ section{position:relative}
         <p>Family-owned and locally based in Turlock — serving homeowners &amp; businesses from Sacramento to Fresno with fast, friendly plumbing service.</p>
       </div>
       <div class="area-cities">
-        <a href="#contact"><svg><use href="#i-pin"/></svg> Modesto</a>
-        <a href="#contact"><svg><use href="#i-pin"/></svg> Turlock</a>
-        <a href="#contact"><svg><use href="#i-pin"/></svg> Tracy</a>
-        <a href="#contact"><svg><use href="#i-pin"/></svg> Stockton</a>
-        <a href="#contact"><svg><use href="#i-pin"/></svg> Merced</a>
-        <a href="#contact"><svg><use href="#i-pin"/></svg> &amp; Surrounding Areas</a>
+        <a href="/service-areas/modesto.html"><svg><use href="#i-pin"/></svg> Modesto</a>
+        <a href="/service-areas/turlock.html"><svg><use href="#i-pin"/></svg> Turlock</a>
+        <a href="/service-areas/tracy.html"><svg><use href="#i-pin"/></svg> Tracy</a>
+        <a href="/service-areas/stockton.html"><svg><use href="#i-pin"/></svg> Stockton</a>
+        <a href="/service-areas/merced.html"><svg><use href="#i-pin"/></svg> Merced</a>
+        <a href="/service-areas/ceres.html"><svg><use href="#i-pin"/></svg> Ceres</a>
+        <a href="/service-areas.html"><svg><use href="#i-arrow"/></svg> &amp; Surrounding Areas</a>
       </div>
     </div>
     <div class="area-map reveal" data-d="1">
@@ -925,26 +561,30 @@ section{position:relative}
       </div>
       <div class="foot-col">
         <h5>Services</h5>
-        <a href="#services">Drain Cleaning</a>
-        <a href="#services">Hydro Jetting</a>
-        <a href="#services">Water Heaters</a>
-        <a href="#services">Sewer &amp; Trenchless</a>
-        <a href="#services">Leak Detection</a>
-        <a href="#services">Gas &amp; Water Lines</a>
+        <a href="/services/drain-cleaning.html">Drain Cleaning</a>
+        <a href="/services/hydro-jetting.html">Hydro Jetting</a>
+        <a href="/services/water-heaters.html">Water Heaters</a>
+        <a href="/services/sewer-trenchless.html">Sewer &amp; Trenchless</a>
+        <a href="/services/leak-detection.html">Leak Detection</a>
+        <a href="/services/gas-lines.html">Gas Lines</a>
+        <a href="/services/commercial.html">Commercial</a>
       </div>
       <div class="foot-col">
         <h5>Service Area</h5>
-        <a href="#area">Modesto</a>
-        <a href="#area">Turlock</a>
-        <a href="#area">Tracy</a>
-        <a href="#area">Stockton</a>
-        <a href="#area">Merced</a>
+        <a href="/service-areas/modesto.html">Modesto</a>
+        <a href="/service-areas/turlock.html">Turlock</a>
+        <a href="/service-areas/tracy.html">Tracy</a>
+        <a href="/service-areas/stockton.html">Stockton</a>
+        <a href="/service-areas/merced.html">Merced</a>
+        <a href="/service-areas/ceres.html">Ceres</a>
       </div>
       <div class="foot-col foot-phones">
         <h5>Contact</h5>
         <a href="tel:+12096692090"><svg style="width:14px;height:14px;color:#8fd0ff;vertical-align:-2px;margin-right:5px"><use href="#i-phone"/></svg> (209) 669-2090</a>
         <p style="margin-top:8px">2475 Acme Ct<br>Turlock, CA 95380</p>
         <p>Mon–Sat · 8am–5pm</p>
+        <a href="/about.html">About Us</a>
+        <a href="/contact.html">Contact</a>
       </div>
     </div>
     <div class="foot-bar">
