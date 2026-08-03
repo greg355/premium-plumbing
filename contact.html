@@ -345,20 +345,39 @@
     });
   });
 
-  /* forms */
-  var wireForm = function(formId, bodyId, successId){
+  /* forms → emailed to the shop via FormSubmit (no backend / no signup) */
+  var FORM_ENDPOINT = 'https://formsubmit.co/ajax/scott@premiumplumbinginc.com';
+  var wireForm = function(formId, bodyId, successId, source){
     var form = document.getElementById(formId); if(!form) return;
     form.addEventListener('submit', function(e){
       e.preventDefault();
       var name = form.querySelector('[name=name]'), phone = form.querySelector('[name=phone]');
       if(!name.value.trim() || !phone.value.trim()){ (!name.value.trim() ? name : phone).focus(); return; }
-      // [PH] wire to a real endpoint / email service (Formspree, Netlify, WordPress, etc.)
-      document.getElementById(bodyId).style.display='none';
-      document.getElementById(successId).classList.add('on');
-      form.scrollIntoView({behavior:'smooth', block:'center'});
+      var btn = form.querySelector('button[type=submit]'), orig = btn ? btn.innerHTML : '';
+      if(btn){ btn.disabled = true; btn.innerHTML = 'Sending…'; }
+      var payload = { _subject: 'New service request — ' + source + ' — ' + name.value.trim(),
+                      _template: 'table', _captcha: 'false', source: source, page_url: location.href };
+      new FormData(form).forEach(function(v,k){ payload[k] = v; });
+      var email = form.querySelector('[name=email]');
+      if(email && email.value.trim()){ payload._replyto = email.value.trim(); }
+      fetch(FORM_ENDPOINT, {
+        method:'POST',
+        headers:{ 'Content-Type':'application/json', 'Accept':'application/json' },
+        body: JSON.stringify(payload)
+      })
+      .then(function(r){ if(!r.ok){ throw new Error('status ' + r.status); } return r.json(); })
+      .then(function(){
+        document.getElementById(bodyId).style.display='none';
+        document.getElementById(successId).classList.add('on');
+        form.scrollIntoView({behavior:'smooth', block:'center'});
+      })
+      .catch(function(){
+        if(btn){ btn.disabled = false; btn.innerHTML = orig; }
+        alert('Sorry — we couldn\'t send your request just now. Please call or text us at (209) 669-2090 and we\'ll take care of you right away.');
+      });
     });
   };
-  wireForm('pageForm','pfBody','pfSuccess');
+  wireForm('pageForm','pfBody','pfSuccess','Contact page');
 
   var y = document.getElementById('year'); if(y) y.textContent = new Date().getFullYear();
 })();
