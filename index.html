@@ -661,18 +661,26 @@
       new FormData(form).forEach(function(v,k){ payload[k] = v; });
       var email = form.querySelector('[name=email]');
       if(email && email.value.trim()){ payload._replyto = email.value.trim(); }
+      // Send as a "simple" form-encoded request so the browser skips the CORS
+      // preflight (a stalled OPTIONS is what froze the button on "Sending…").
+      var body = new URLSearchParams();
+      Object.keys(payload).forEach(function(k){ body.append(k, payload[k]); });
+      var ctrl = ('AbortController' in window) ? new AbortController() : null;
+      var timer = ctrl ? setTimeout(function(){ ctrl.abort(); }, 15000) : null;
       fetch(FORM_ENDPOINT, {
-        method:'POST',
-        headers:{ 'Content-Type':'application/json', 'Accept':'application/json' },
-        body: JSON.stringify(payload)
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: body,
+        signal: ctrl ? ctrl.signal : undefined
       })
-      .then(function(r){ if(!r.ok){ throw new Error('status ' + r.status); } return r.json(); })
+      .then(function(r){ if(timer){ clearTimeout(timer); } return r.text(); })
       .then(function(){
         document.getElementById(bodyId).style.display='none';
         document.getElementById(successId).classList.add('on');
         form.scrollIntoView({behavior:'smooth', block:'center'});
       })
       .catch(function(){
+        if(timer){ clearTimeout(timer); }
         if(btn){ btn.disabled = false; btn.innerHTML = orig; }
         alert('Sorry — we couldn\'t send your request just now. Please call or text us at (209) 669-2090 and we\'ll take care of you right away.');
       });
