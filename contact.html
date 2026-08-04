@@ -346,7 +346,7 @@
   });
 
   /* forms → emailed to the shop via FormSubmit (no backend / no signup) */
-  var FORM_ENDPOINT = 'https://formsubmit.co/ajax/kyle@advancedmarketers.co';
+  var FORM_ENDPOINT = 'https://formsubmit.co/ajax/info@premiumplumbinginc.com';
   var wireForm = function(formId, bodyId, successId, source){
     var form = document.getElementById(formId); if(!form) return;
     form.addEventListener('submit', function(e){
@@ -356,8 +356,7 @@
       var btn = form.querySelector('button[type=submit]'), orig = btn ? btn.innerHTML : '';
       if(btn){ btn.disabled = true; btn.innerHTML = 'Sending…'; }
       var payload = { _subject: 'New service request — ' + source + ' — ' + name.value.trim(),
-                      _template: 'table', _captcha: 'false', _cc: 'info@premiumplumbinginc.com',
-                      source: source, page_url: location.href };
+                      _template: 'table', _captcha: 'false', source: source, page_url: location.href };
       new FormData(form).forEach(function(v,k){ payload[k] = v; });
       var email = form.querySelector('[name=email]');
       if(email && email.value.trim()){ payload._replyto = email.value.trim(); }

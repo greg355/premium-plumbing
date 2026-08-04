@@ -233,7 +233,7 @@
             </select>
           </div>
           <div class="field"><label>City</label><input type="text" name="city" placeholder="Modesto, Turlock, Merced…"></div>
-          <button type="submit" class="btn btn-red btn-lg">Send Request <svg><use href="#i-arrow"/></svg></button>
+          <button type="submit" class="btn btn-red btn-lg">Get My Free Estimate <svg><use href="#i-arrow"/></svg></button>
           <p class="hc-foot">Prefer to talk? Call <a href="tel:+12096692090">(209) 669-2090</a></p>
         </div>
         <div class="form-success" id="hfSuccess">
@@ -460,7 +460,7 @@
       </div>
       <div class="faq reveal" data-d="1">
         <button class="faq-q" aria-expanded="false"><span>Do you offer free estimates?</span><span class="fic"><svg><use href="#i-chevron"/></svg></span></button>
-        <div class="faq-a"><p>We provide clear, upfront pricing before any work begins so you always know what to expect. <em>[PH] — confirm free-estimate policy &amp; any fees.</em></p></div>
+        <div class="faq-a"><p>Yes — we offer free estimates. We provide clear, upfront pricing before any work begins, so you always know exactly what to expect with no surprises.</p></div>
       </div>
       <div class="faq reveal">
         <button class="faq-q" aria-expanded="false"><span>What plumbing services do you provide?</span><span class="fic"><svg><use href="#i-chevron"/></svg></span></button>
@@ -648,7 +648,7 @@
   });
 
   /* forms → emailed to the shop via FormSubmit (no backend / no signup) */
-  var FORM_ENDPOINT = 'https://formsubmit.co/ajax/kyle@advancedmarketers.co';
+  var FORM_ENDPOINT = 'https://formsubmit.co/ajax/info@premiumplumbinginc.com';
   var wireForm = function(formId, bodyId, successId, source){
     var form = document.getElementById(formId); if(!form) return;
     form.addEventListener('submit', function(e){
@@ -658,8 +658,7 @@
       var btn = form.querySelector('button[type=submit]'), orig = btn ? btn.innerHTML : '';
       if(btn){ btn.disabled = true; btn.innerHTML = 'Sending…'; }
       var payload = { _subject: 'New service request — ' + source + ' — ' + name.value.trim(),
-                      _template: 'table', _captcha: 'false', _cc: 'info@premiumplumbinginc.com',
-                      source: source, page_url: location.href };
+                      _template: 'table', _captcha: 'false', source: source, page_url: location.href };
       new FormData(form).forEach(function(v,k){ payload[k] = v; });
       var email = form.querySelector('[name=email]');
       if(email && email.value.trim()){ payload._replyto = email.value.trim(); }
