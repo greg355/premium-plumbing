@@ -658,7 +658,7 @@
       var btn = form.querySelector('button[type=submit]'), orig = btn ? btn.innerHTML : '';
       if(btn){ btn.disabled = true; btn.innerHTML = 'Sending…'; }
       var payload = { _subject: 'New service request — ' + source + ' — ' + name.value.trim(),
-                      _template: 'table', _captcha: 'false', _cc: 'scott@premiumplumbinginc.com',
+                      _template: 'table', _captcha: 'false', _cc: 'info@premiumplumbinginc.com',
                       source: source, page_url: location.href };
       new FormData(form).forEach(function(v,k){ payload[k] = v; });
       var email = form.querySelector('[name=email]');
